@@ -1,0 +1,70 @@
+.contFallos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+}
+
+
+.contFallosHead{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contFallosBody{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.5);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 5%;
+    overflow-y: auto;
+}
+.contFallosBody::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.contFallosBody table{
+    width: 95%;
+    height: 100%;
+    margin: 1px;
+}
+table{
+    border-spacing: 0;
+    border-collapse: collapse ;
+    width: 100%;
+    margin: 1px auto;
+}
+caption{
+    margin-bottom: 10px;
+
+}
+td, th{
+    border: solid 1px #038C25;
+    padding: 5px;
+}
+tr:nth-child(even) {
+    background-color: #C1D96C;
+}
+td:nth-child(n+3),
+th:nth-child(n+3){
+    text-align: center;
+}
+tbody tr:hover{
+    background-color: white !important;
+}
+thead{
+    background-color: black;
+    color: aliceblue;
+    position: sticky;
+    top: 0;
+}

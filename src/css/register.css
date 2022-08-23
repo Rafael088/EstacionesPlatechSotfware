@@ -1,0 +1,132 @@
+
+.contRegister{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../pages/login/login.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.contRegister .logoContRegister{
+    width: 50%;
+    height: 27%;
+    background-image: url('../pages/login/logo.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.contRegister .contForm{
+    width: 50%;
+    height: 80%;
+    padding: 30px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contRegister .contForm .form{
+    width: 50%;
+    height: 90%;
+    background: rgba(255, 255, 255, 0.3);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 5px 10px 10px 5px rgba(3, 140, 37, 0.8);
+}
+.contRegister .contForm .form .formInput{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contRegister .contForm .form .headerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    border-bottom: 2px solid rgb(3, 140, 37);
+}
+.contRegister .contForm .form .headerForm h1{
+    color: rgb(3, 140, 37);
+    font-size: 25px;
+}
+.contRegister .contForm .form .bodyForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+}
+.contRegister .contForm .form .bodyForm .inputUser{
+    width: 80%;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contRegister .contForm .form .bodyForm .inputUser input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    
+    border: #71C5EE 1px solid;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.contRegister .contForm .form .bodyForm .inputPassword{
+    width: 80%;
+    height: 50px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contRegister .contForm .form .bodyForm .inputPassword input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border: #71C5EE 1px solid;
+    padding: 5px;
+    border-radius: 15px;
+}
+.contRegister .contForm .form .bodyForm .inputButton{
+    width: 40%;
+    height: 17%;
+    margin-top: 20px;
+}
+.contRegister .contForm .form .bodyForm .inputButton input{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    border: none;
+    background-color: rgb(3, 140, 37);
+    border-radius: 15px;
+}
+.contRegister .contForm .form .bodyForm .inputButton input:hover{
+    background-color: #9EBF26;
+    border: 2px solid rgb(3, 140, 37);
+}
+.contRegister .contForm .form .footerForm{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 20%;
+    gap: 30px;
+}

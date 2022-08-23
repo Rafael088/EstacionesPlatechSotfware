@@ -1,0 +1,120 @@
+.contHome{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #C1D96C;
+}
+.contPublic{
+    width: 95%;
+    height: 90%;
+    background-image: url('../pages/login/login.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 5px 10px 10px 5px rgba(3, 140, 37, 0.8);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.contBody{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contBody .contHead{
+    width: 100%;
+    display: flex;
+    height: 10%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.contBody .contHead h1{
+    color: #038C25 ;
+}
+.contNavBar{
+    width: 11%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.3);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 5px 10px 10px 5px rgba(3, 140, 37, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.contNavBar .contButtons{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contNavBar .contButtons .btt{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.1s;
+}
+.contNavBar .contButtons .bttn{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.1s;
+    
+    background-color: rgba(3, 140, 37, 0.3);
+}
+.contNavBar .contImg{
+    width: 95%;
+    height: 13%;
+    margin-left: 5px;
+    background-image: url('./img/Chec-400x0.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.contButtons .btt .iconBtt{
+    width: 10%;
+    height: 100%;
+    position: absolute ;
+    left: 10px;
+    color: #02731E;
+}
+.contNavBar .contButtons .btt:hover{
+    cursor: pointer;
+    background-color: rgba(3, 140, 37, 0.5);
+}
+.contNavBar button{
+    width: 80%;
+    height: 5%;
+    border: none;
+    background-color: #9EBF26;
+    border-radius: 10px;
+}
+.contNavBar button:hover{
+    cursor: pointer;
+    background-color: rgba(158, 191, 38, 0.5);
+}
+.contBody .contHead:hover{
+    cursor: default;
+}
