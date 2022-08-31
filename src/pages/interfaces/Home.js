@@ -12,14 +12,9 @@ function Home() {
     let output = String(date.getDate()).padStart(2, '0') + '/' + String(date.getMonth() + 1).padStart(2, '0') + '/' + date.getFullYear();
 
     function cerrarSesion() {
-        cookies.remove('id', {path:"/"});
-        cookies.remove('user', {path:"/"});
-        cookies.remove('name', {path:"/"});
-        window.location.href="./";
+        
     }
-    if(!cookies.get('id')){
-        window.location.href="./";
-    }
+    
     var [varIa, setVarIa] = useState(false);
     var [varFails, setVarFails] = useState(false);
     var [varWelcome, setVarWelcome] = useState(true);

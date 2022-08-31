@@ -66,5 +66,5 @@ thead{
     background-color: black;
     color: aliceblue;
     position: sticky;
-    top: 0;
+    top: -10px;
 }

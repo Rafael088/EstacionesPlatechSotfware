@@ -8,122 +8,158 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('../pages/login/imgs/background4.jpg');
+    background-image: url('../pages/login/imgs/sincerely-media-qlcVpZqzcEc-unsplash.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
 }
 .login .logoCont{
-    width: 50%;
+    width: 47%;
     height: 27%;
     background-image: url('../pages/login/logo.png');
     background-repeat: no-repeat;
     background-size: 100%;
+    display: none;
 }
 
 
 .login .contForm{
-    width: 70%;
-    height: 80%;
+    width: 60%;
+    height: 100%;
     padding: 30px;
     margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all 0.1s ease-in-out;
    
 }
+
 .login .contForm .form{
     align-items: center;
     width: 50%;
     height: 90%;
-    background: rgba(255, 255, 255, 0.3);
-    border-left: 2px solid rgba(255, 255, 255, 0.5);
-    border-top: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-shadow: 5px 10px 10px 5px rgba(3, 140, 37, 0.8);
-}
-.login .contForm .form .formInput{
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+    border-radius: 15px;
+    
+    transition: all 0.1s ease-in-out;
+    backdrop-filter: blur(1px);
 }
 .login .contForm .form .headerForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 30%;
-    background-image: url('../pages/login/imgs/LogoPlatech.png');
+    width: 35%;
+    height: 35%;
+    background-image: url('../pages/login/imgs/logoFondoBlanco-removebg.png');
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 101%;
 }
-.login .contForm .form .headerForm h1{
-    color: rgb(3, 140, 37);
-    font-size: 25px;
-}
-.login .contForm .form .bodyForm{
+.login .form .formInput{
+    width: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50%;
+    justify-content: space-around;
 }
-.login .contForm .form .bodyForm .inputUser{
+.login .contForm .form .inputUser{
     width: 80%;
-    height: 50px;
-    margin: 10px;
+    height: 20%;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.login .contForm .form .bodyForm .inputUser input{
-    width: 100%;
-    height: 100%;
+.login .contForm .form  .inputUser input{
+    width: 80%;
+    height: 25px;
     border: none;
-    
-    border: #71C5EE 1px solid;
+    border: rgb(0, 196, 204) 2px solid;
     padding: 5px;
     border-radius: 15px;
+    text-align: center;
 }
 
-.login .contForm .form .bodyForm .inputPassword{
+.login .contForm .form .inputPassword{
     width: 80%;
-    height: 50px;
-    margin: 15px;
+    height: 20%;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.login .contForm .form .bodyForm .inputPassword input{
+.login .contForm .form  p{
+    font-size: 20px;
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contInputIcon{
     width: 100%;
-    height: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.contInputIcon .icon{
+    color: green;
+    position: relative;
+    left: 30px;
+
+}
+.login .contForm .form  .inputPassword input{
+    width: 80%;
+    height: 25px;
     border: none;
-    border: #71C5EE 1px solid;
+    border: rgb(0, 196, 204) 2px solid;
     padding: 5px;
     border-radius: 15px;
+    text-align: center;
 }
-.login .contForm .form .bodyForm .inputButton{
-    width: 40%;
-    height: 17%;
-    margin-top: 20px;
+input[class='inputText']{
+    background: white;
 }
-.login .contForm .form .bodyForm .inputButton input{
-    width: 100%;
-    height: 100%;
-    margin-top: 10px;
+input[class='inputText']:focus{
     border: none;
-    background-color: rgb(3, 140, 37);
-    border-radius: 15px;
 }
-.login .contForm .form .bodyForm .inputButton input:hover{
-    background-color: #9EBF26;
-    border: 2px solid rgb(3, 140, 37);
+input[class='inputPasw']{
+    background: white;
+}
+
+.login .contForm .form .inputButton{
+    width: 50%;
+    height: 55px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login .contForm .form .inputButton input{
+    width: 80%;
+    height: 55px;
+    margin-top: 10px;
+    background: rgb(0, 196, 204, 0.3);
+    
+    border:  2px solid rgb(0, 196, 204, 0.3);
+    border-radius: 15px;
+    box-shadow: 6px 6px 15px 1px rgba(0, 0, 0, 0.5);
+    color: green;
+    font-size: 20px;
+    transition: all 0.1s ease-in-out;
+    border-radius: 32px;
+    
+}
+.login .contForm .form .inputButton input:hover{
+    background-image: linear-gradient(120deg, #d4fc79 10%, #96e6a1 100%);
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.3;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(253, 252, 252, 0.5);
+    
 }
 .login .contForm .form .footerForm{
     display: flex;
@@ -133,4 +169,21 @@
     width: 100%;
     height: 20%;
     gap: 30px;
+}
+@media screen and (max-width: 1280px) {
+    .login .contForm .form{
+        width: 90%;
+        margin: 0px;
+    }
+}
+@media screen and (max-width: 548px) {
+    .login .contForm .form{
+        width: 100%;
+        margin: 0px;
+        height: 100%;
+    }
+    .login .contForm{
+        width: 100%;
+        height: 100%;
+    }
 }

@@ -1,4 +1,3 @@
-import React from "react";
 
 const Cabecera = () => {
     return <>
@@ -8,5 +7,4 @@ const Cabecera = () => {
     
     </>
 }
-
 export default Cabecera
