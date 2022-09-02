@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-const conexionDb = async(db) => {
-    axios.post("http://3.141.169.163:3000/api/login/oauth",   { "email"  : "diego@gmail.com",
-    "passwd" : "1234567"}).console.log( response => console.log(response))
+const oauth = async(body) => {
+    const response =  await axios.post("http://18.216.197.222:8000/api/login/oauth", body)
+    return response
 }
 
-export default conexionDb
+export default oauth
