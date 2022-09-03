@@ -8,8 +8,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('../pages/login/imgs/sincerely-media-qlcVpZqzcEc-unsplash.jpg');
+    background-image: url('../pages/login/imgs/jason-blackeye-KUgDg__TMGk-unsplash.jpg');
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 .login .logoCont{
     width: 47%;
@@ -46,7 +47,7 @@
     border-radius: 15px;
     
     transition: all 0.1s ease-in-out;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(5px);
 }
 .login .contForm .form .headerForm{
     width: 35%;
