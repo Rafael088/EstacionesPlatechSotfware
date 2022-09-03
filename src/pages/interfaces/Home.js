@@ -90,7 +90,6 @@ function Home() {
                     {varEstado? <Estado></Estado> : <></>}
                 </div>
             </div>
-            
         </div>
      );
 }
