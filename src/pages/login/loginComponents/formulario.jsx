@@ -45,11 +45,13 @@ const Formulario = (props) => {
 
             dispatch(SetUser(result))
 
-            settings["type"] = toast.TYPE.SUCCESS
+            settings["type"]   = toast.TYPE.SUCCESS
             settings["render"] = "usuario valido"
+            settings["href"]   = "./home"
         }else{
-            settings["type"] = toast.TYPE.WARNING
+            settings["type"]   = toast.TYPE.WARNING
             settings["render"] = "usuario o contraseña incorrecta"
+            settings["href"]   = "./error"  
         }
 
         setTimeout(()=>
@@ -60,8 +62,11 @@ const Formulario = (props) => {
                 render: settings["render"],
                 transition:transition
                 })
-            },1000)
 
+                window.location.href = settings["href"]   
+            },1000)
+        
+        
     }
 
     return <>
