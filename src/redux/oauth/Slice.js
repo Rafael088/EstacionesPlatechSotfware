@@ -1,21 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit'
+import jwt_decode from 'jwt-decode'
 import oauth from '../../services/login'
 
 export const oauthSlice = createSlice({
-  name: 'counter',
+  name: 'oauth',
   initialState: {
     value: "no ha ingresado nada",
   },
   reducers: {
-    SetUser: async(state, action) => {
-      
-      let user = ""
-      const result = await oauth(action.payload)
-      .then(response => user = response)
-      .catch(e => user = e)
-
-      state.value = user
-      console.log(state.value)
+    SetUser: (state, action) => {
+      console.log(action)
+      state.value = jwt_decode(action.payload)
     },
   },
 })
@@ -23,9 +18,9 @@ export const oauthSlice = createSlice({
 export const setUserAsync = (body) => (dispatch) => {
   setTimeout(() => {
     dispatch(SetUser(body))
-  }, 1)
+  }, 500)
 }
 
 export const { SetUser } = oauthSlice.actions
-export const getUser = (state) => state.oauth.value
+export const getUser = (state) => state.oauth
 export default oauthSlice.reducer
