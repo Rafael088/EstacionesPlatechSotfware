@@ -5,16 +5,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('../pages/login/imgs/sincerely-media-qlcVpZqzcEc-unsplash.jpg');
-    background-repeat: no-repeat;
+    
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 56px;
 }
 .contPublic{
-    width: 95%;
-    height: 90%;
-    background-image: url('../pages/login/imgs/background4.jpg');
+    width: 100%;
+    height: 100%;
+    background-image: url('../pages/login/imgs/jason-blackeye-KUgDg__TMGk-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 15px;
     box-shadow: 5px 10px 10px 5px rgba(3, 140, 37, 0.8);
     display: flex;
     flex-direction: row;
@@ -22,11 +23,13 @@
     justify-content: space-around;
 }
 .contBody{
-    width: 75%;
-    height: 100%;
+    width: 80%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 15px;
+    padding-right: 20px;
 }
 .contBody .contHead{
     width: 100%;
@@ -37,20 +40,20 @@
     justify-content: space-between;
 }
 .contBody .contHead h1{
-    color: #038C25;
+    color: #000000;
 }
 .contNavBar{
     width: 11%;
-    height: 80%;
-    background: rgba(255, 255, 255, 0.9);
+    height: 85%;
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 15px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(5px);
-    box-shadow: 1px 1px 10px 5px rgba(3, 140, 37, 0.8);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin-left: 20px;
 }
 .contNavBar .contButtons{
     width: 100%;
@@ -76,8 +79,7 @@
     align-items: center;
     justify-content: center;
     transition-duration: 0.1s;
-    
-    background-color: rgba(3, 140, 37, 0.5);
+    background-color: rgba(2, 115, 30, 0.6);
 }
 .contNavBar .contImg{
     width: 95%;
@@ -85,30 +87,32 @@
     margin-left: 7px;
     background-image: url('./img/Chec-400x0.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 101%;
 }
 .contButtons .btt .iconBtt{
     width: 10%;
     height: 100%;
     position: absolute ;
     left: 10px;
-    color: #02731E;
+    color: rgb(2, 115, 30);
 }
 .contNavBar .contButtons .btt:hover{
     cursor: pointer;
     
-    background-color: rgba(3, 140, 37, 0.5);
+    background-color: rgba(2, 115, 30, 0.6);
 }
 .contNavBar button{
-    width: 80%;
+    width: 60%;
     height: 5%;
     border: none;
-    background-color: #9EBF26;
+    background-color: rgba(202, 36, 36, 0.6);
     border-radius: 10px;
+    transition: all 0.2s;
 }
 .contNavBar button:hover{
     cursor: pointer;
-    border: 1px solid rgba(255, 0, 0, 0.4);
+    width: 80%;
+    border: 1px solid rgba(255, 0, 0, 0.8);
     background-color: rgba(255, 255, 255, 0.5);
 }
 .contBody .contHead:hover{
