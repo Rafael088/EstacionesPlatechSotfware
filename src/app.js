@@ -1,21 +1,50 @@
-import {BrowserRouter, Route, Routes} from 'react-router-dom';//npm install react-router-dom
+import {Route, Router, Routes} from 'react-router-dom';
 import Login from './pages/login/login.js';
 import Home from './pages/interfaces/Home.js';
 import Register from './pages/interfaces/Register.js';
-function Router() {
+
+import Navbar from './components/navBar';
+
+import Estado from './components/Estado.js';
+import Fallos from './components/Fallos.js';
+
+function App() {
   
+  const buttons = [
+    {
+      name:"Estados",
+      path:"/home/estados",
+      component : <Estado/>
+    },
+    {
+      name:"Fallos",
+      path:"/home/fallos",
+      component : <Fallos/> 
+    }
+  ]
+
   return (
     <>
-      <BrowserRouter>
         <Routes>
           <Route path='/' element={<Login/>}/>
-          <Route path='/home' element={<Home/>}/>
           <Route path='/register' element={<Register/>}/>
         </Routes>
-    </BrowserRouter>
+
+        <div className="contHome">
+          <div className='contPublic'>
+            <Navbar buttons={buttons}/>
+              <Routes>
+                  <Route path='/home/*' element={<Home/>}/>
+              </Routes>
+              <div className='contBody'>
+              <Routes>
+                  {buttons.map((v) => <Route path = {v.path} element = {v.component}/>)}
+              </Routes>
+              </div>
+          </div>
+        </div>
     </>
-    
   );
 }
 
-export default Router;
+export default App;
