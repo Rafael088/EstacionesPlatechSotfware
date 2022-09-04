@@ -7,9 +7,11 @@ const ButtonNavbar  = ({ to, children, ...props }) => {
   
     return (
       <div className="contLink">
+
         <Link to={to} {...props} className={isActive ? "bttn" : "btt"}>
           {children}
         </Link>
+        
       </div>
     )
 }
