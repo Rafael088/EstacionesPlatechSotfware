@@ -7,7 +7,7 @@ export default function Navbar({buttons}) {
     <div className='contNavBar'>
     <div className='contImg'/>
       <div className='contButtons'>
-          
+         
           {buttons.map((v) => <ButtonNavBar to={v.path} icon={v.icon}>{v.name}</ButtonNavBar>)}
           
       </div>
