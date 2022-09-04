@@ -54,13 +54,11 @@ const ModalA = ({...props}) => {
         visible={modalIsOpen}
         onClose={closeModal}
       >
-    <div class="align-content-lg-centerr">
     <CModalHeader align = "center"> 
-        <h2>
-            Estado de sensores
-        </h2>
+            <h2>
+                Estado de sensores
+            </h2>
     </CModalHeader>
-    </div>
     <CModalBody>
         {titulos.map((v) => <WidgetChart ChartLineConfig = {ChartLineConfig} titulo = {`${v} actual`}/>)}
     </CModalBody>
