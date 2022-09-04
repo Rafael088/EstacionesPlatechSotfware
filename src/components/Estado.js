@@ -1,9 +1,10 @@
 import React from "react";
 import MapView from "./mapView";
+import '../css/estado.css';
 
 function Estado() {
     return ( 
-        <div>
+        <div className="contEstado">
             <h2>Estado de los sensores</h2>
             <MapView />
         </div>
