@@ -8,18 +8,24 @@ import Navbar from './components/navBar';
 import Estado from './components/Estado.js';
 import Fallos from './components/Fallos.js';
 
+import { 
+  FcElectronics,
+  FcFlashOn } 
+  from "react-icons/fc";
 function App() {
   
   const buttons = [
     {
       name:"Estados",
       path:"/home/estados",
-      component : <Estado/>
+      component : <Estado/>,
+      icon : <FcElectronics size={'3em'} />
     },
     {
       name:"Fallos",
       path:"/home/fallos",
-      component : <Fallos/> 
+      component : <Fallos/>,
+      icon : <FcFlashOn size = {'3em'} />
     }
   ]
   const path = window.location.pathname

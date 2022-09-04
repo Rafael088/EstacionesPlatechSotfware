@@ -7,8 +7,9 @@ const ButtonNavbar  = ({ to, children, icon, ...props }) => {
   
     return (
       <div className="contLink">
-        {icon}
+   
         <Link to={to} {...props} className={isActive ? "bttn" : "btt"}>
+          {icon}
           {children}
         </Link>
 
