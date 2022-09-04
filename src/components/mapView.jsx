@@ -36,7 +36,7 @@ const iconVerde = new L.Icon({
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <Marker position={position} icon = {iconVerde} onClick = {() => console.log("me hicieron click")}>
+                <Marker position={position} icon = {iconVerde} eventHandlers={{click: (e) => {console.log('marker clicked', e)},}}>
                 <Popup>
                     A pretty CSS3 popup. <br /> Easily customizable.
                 </Popup>

@@ -22,7 +22,6 @@ function App() {
       component : <Fallos/> 
     }
   ]
-
   const path = window.location.pathname
 
   const pathPermit = ["/", "/register"]

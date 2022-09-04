@@ -8,7 +8,7 @@ export default function Navbar({buttons}) {
     <div className='contImg'/>
       <div className='contButtons'>
           
-          {buttons.map((v,i) => <ButtonNavBar to={v.path} key = {i}>{v.name} </ButtonNavBar>)}
+          {buttons.map((v) => <ButtonNavBar to={v.path} icon={v.icon}>{v.name}</ButtonNavBar>)}
           
       </div>
     </div>
