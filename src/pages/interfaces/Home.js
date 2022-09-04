@@ -1,7 +1,7 @@
 import Navbar from "../../components/navBar"
 import Estados from "../../components/Estado"
 import Fallos from "../../components/Fallos"
-
+import '../../css/home.css';
 import { Route, Routes } from "react-router-dom"
 
 function Home() {

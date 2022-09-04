@@ -6,11 +6,12 @@ const ButtonNavbar  = ({ to, children, ...props }) => {
     const isActive = useMatch({ path: resolvedPath.pathname, end: true })
   
     return (
-      <div className={isActive ? "bttn" : "btt"}>
+      <div className="contLink">
 
-        <Link to={to} {...props}>
+        <Link to={to} {...props} className={isActive ? "bttn" : "btt"}>
           {children}
         </Link>
+        
       </div>
     )
 }
