@@ -7,11 +7,15 @@ import Navbar from './components/navBar';
 
 import Estado from './components/Estado.js';
 import Fallos from './components/Fallos.js';
+import IA from './components/Ia'
+import Errores from './components/errores.jsx';
 
 import { 
   FcElectronics,
-  FcFlashOn } 
+  FcFlashOn,
+  FcTreeStructure } 
   from "react-icons/fc";
+
 function App() {
   
   const buttons = [
@@ -26,20 +30,26 @@ function App() {
       path:"/home/fallos",
       component : <Fallos/>,
       icon : <FcFlashOn size = {'3em'} />
+    },
+    {
+      name:"IA",
+      path:"/home/IA",
+      component : <IA/>,
+      icon : <FcTreeStructure size = {'3em'} />
     }
   ]
+
   const path = window.location.pathname
+
+  console.log(path)
 
   const pathPermit = ["/", "/register"]
 
-  const EnterApp = () => {
+  const Home = () => {
     return <>
       <div className="contHome">
           <div className='contPublic'>
             <Navbar buttons={buttons}/>
-              <Routes>
-                  <Route path='/home' element={<Home/>}/>
-              </Routes>
               <div className='contBody'>
               <Routes>
                   {buttons.map((v, i) => <Route path = {v.path} element = {v.component} key = {i}/>)}
@@ -48,6 +58,18 @@ function App() {
           </div>
         </div>
     </>
+  }
+
+  const EnterApp = () => {
+    if(path.search("home") != -1){
+      return Home()
+    }else{
+      return <>
+        <Routes>
+            <Route path = "*" element = {<Errores/>}/>
+        </Routes>
+      </>
+    }
   }
 
   return (
