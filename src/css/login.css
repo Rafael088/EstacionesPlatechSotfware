@@ -10,34 +10,12 @@
     justify-content: center;
     background-image: url('../pages/login/imgs/jason-blackeye-KUgDg__TMGk-unsplash.jpg');
     background-repeat: no-repeat;
+    transition: all 0.2s;
     background-size: 100%;
 }
-.login .logoCont{
-    width: 47%;
-    height: 27%;
-    background-image: url('../pages/login/logo.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: none;
-}
-
-
-.login .contForm{
-    width: 60%;
-    height: 100%;
-    padding: 30px;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
+.login .form{
     align-items: center;
-    justify-content: center;
-    transition: all 0.1s ease-in-out;
-   
-}
-
-.login .contForm .form{
-    align-items: center;
-    width: 50%;
+    width: 35%;
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -49,7 +27,7 @@
     transition: all 0.1s ease-in-out;
     backdrop-filter: blur(5px);
 }
-.login .contForm .form .headerForm{
+.login .form .headerForm{
     width: 35%;
     height: 35%;
     background-image: url('../pages/login/imgs/logoFondoBlanco-removebg.png');
@@ -64,7 +42,7 @@
     align-items: center;
     justify-content: space-around;
 }
-.login .contForm .form .inputUser{
+.login .form .inputUser{
     width: 80%;
     height: 20%;
     margin: 0px;
@@ -72,9 +50,9 @@
     flex-direction: column;
     align-items: center;
 }
-.login .contForm .form  .inputUser input{
+.login .form  .inputUser input{
     width: 80%;
-    height: 25px;
+    height: 35px;
     border: none;
     border: rgb(0, 196, 204) 2px solid;
     padding: 5px;
@@ -82,7 +60,7 @@
     text-align: center;
 }
 
-.login .contForm .form .inputPassword{
+.login  .form .inputPassword{
     width: 80%;
     height: 20%;
     margin: 0px;
@@ -90,7 +68,7 @@
     flex-direction: column;
     align-items: center;
 }
-.login .contForm .form  p{
+.login  .form  p{
     font-size: 20px;
     color: green;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -109,9 +87,9 @@
     left: 30px;
 
 }
-.login .contForm .form  .inputPassword input{
+.login  .form  .inputPassword input{
     width: 80%;
-    height: 25px;
+    height: 35px;
     border: none;
     border: rgb(0, 196, 204) 2px solid;
     padding: 5px;
@@ -128,7 +106,7 @@ input[class='inputPasw']{
     background: white;
 }
 
-.login .contForm .form .inputButton{
+.login .form .inputButton{
     width: 50%;
     height: 55px;
     margin-top: 20px;
@@ -138,7 +116,7 @@ input[class='inputPasw']{
     flex-direction: column;
     align-items: center;
 }
-.login .contForm .form .inputButton input{
+.login .form .inputButton input{
     width: 80%;
     height: 55px;
     margin-top: 10px;
@@ -153,7 +131,7 @@ input[class='inputPasw']{
     border-radius: 32px;
     
 }
-.login .contForm .form .inputButton input:hover{
+.login  .form .inputButton input:hover{
     background-image: linear-gradient(120deg, #d4fc79 10%, #96e6a1 100%);
     cursor: pointer;
     width: 100%;
@@ -162,7 +140,7 @@ input[class='inputPasw']{
     6px 6px 10px rgba(253, 252, 252, 0.5);
     
 }
-.login .contForm .form .footerForm{
+.login  .form .footerForm{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -171,20 +149,69 @@ input[class='inputPasw']{
     height: 20%;
     gap: 30px;
 }
-@media screen and (max-width: 1280px) {
-    .login .contForm .form{
-        width: 90%;
-        margin: 0px;
+@media screen and (max-width: 950px) {
+    .login{
+        background-size: 200%;
+    }
+    .login .form{
+        width: 50%;
+    }
+    
+}
+@media screen and (max-width: 950px) {
+    .login{
+        background-size: 200%;
+    }
+    .login .form{
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .login .form{
+        width: 70%;
+    }
+    .login{
+        background-size: 300%;
     }
 }
-@media screen and (max-width: 548px) {
-    .login .contForm .form{
-        width: 100%;
-        margin: 0px;
-        height: 100%;
+@media screen and (max-width: 490px) {
+    .login{
+        background-size: 350%;
     }
-    .login .contForm{
+    
+}
+@media screen and (max-width: 400px) {
+    .login .form{
         width: 100%;
-        height: 100%;
     }
+    .login{
+        background-size: 400%;
+    }
+}
+@media screen and (min-height: 864px) and (max-width: 490px){
+    .login .form{
+        width: 100%;
+    }
+}
+@media screen and (height: 1180px) and (width: 820px){
+    .login .form{
+        width: 70%;
+        height: 70%;
+    }
+    .login{
+        background-size: 400%;
+    }
+    
+}
+@media screen and (height: 1368px) and (width: 912px){
+    .login .form{
+        width: 70%;
+        height: 70%;
+    }
+    .login{
+        background-size: 400%;
+    }
+    
 }
