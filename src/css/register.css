@@ -1,132 +1,198 @@
-
 .contRegister{
-    padding: 0px;
-    margin: 0px;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('../pages/login/login.jpg');
-    background-repeat: no-repeat;
+    background-image: url('../imgs/background1.jpg');
     background-size: 100%;
+    transition: all 0.3s;
 }
-.contRegister .logoContRegister{
-    width: 50%;
-    height: 27%;
-    background-image: url('../pages/login/logo.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-
 .contRegister .contForm{
-    width: 50%;
+    width: 37%;
     height: 80%;
-    padding: 30px;
-    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    background-color: rgba(240, 248, 255, 0.8);
+    border-radius: 35px;
+    transition: all 0.3s;
 }
-.contRegister .contForm .form{
-    width: 50%;
-    height: 90%;
-    background: rgba(255, 255, 255, 0.3);
-    border-left: 2px solid rgba(255, 255, 255, 0.5);
-    border-top: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-shadow: 5px 10px 10px 5px rgba(3, 140, 37, 0.8);
-}
-.contRegister .contForm .form .formInput{
+.contRegister .contForm .headerForm{
     width: 100%;
-    height: 100%;
+    height: 13%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-.contRegister .contForm .form .headerForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 30%;
-    border-bottom: 2px solid rgb(3, 140, 37);
-}
-.contRegister .contForm .form .headerForm h1{
-    color: rgb(3, 140, 37);
-    font-size: 25px;
-}
-.contRegister .contForm .form .bodyForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50%;
-}
-.contRegister .contForm .form .bodyForm .inputUser{
-    width: 80%;
-    height: 50px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contRegister .contForm .form .bodyForm .inputUser input{
-    width: 100%;
-    height: 100%;
-    border: none;
-    
-    border: #71C5EE 1px solid;
-    padding: 5px;
-    border-radius: 15px;
-}
-
-.contRegister .contForm .form .bodyForm .inputPassword{
-    width: 80%;
-    height: 50px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contRegister .contForm .form .bodyForm .inputPassword input{
-    width: 100%;
-    height: 100%;
-    border: none;
-    border: #71C5EE 1px solid;
-    padding: 5px;
-    border-radius: 15px;
-}
-.contRegister .contForm .form .bodyForm .inputButton{
-    width: 40%;
-    height: 17%;
     margin-top: 20px;
 }
-.contRegister .contForm .form .bodyForm .inputButton input{
+.contRegister .contForm .bodyForm{
     width: 100%;
-    height: 100%;
-    margin-top: 10px;
+    height: 87%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contRegister .contForm .bodyForm .formInput{
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.contRegister .contForm .bodyForm .formInput .input{
+    width: 65%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 7px;
+}
+.input input{
+    width: 100%;
+    height: 36px;
+    border-radius: 25px;
+    padding-left: 10px;
+}
+.input input[type=text]:hover{
     border: none;
-    background-color: rgb(3, 140, 37);
-    border-radius: 15px;
 }
-.contRegister .contForm .form .bodyForm .inputButton input:hover{
-    background-color: #9EBF26;
-    border: 2px solid rgb(3, 140, 37);
+.input input[type=text]{
+    border: 1px solid #5eace0;
 }
-.contRegister .contForm .form .footerForm{
+
+.input input[type=password]{
+    border: 1px solid #5eace0;
+}
+.input input[type=password]:hover{
+    border: none;
+}
+.input p{
+    margin: 3px;
+}
+.contRegister .contForm .bodyForm .formInput .inputButton{
+    width: 100%;
+    height: 20%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
-    height: 20%;
-    gap: 30px;
+}
+.inputButton input{
+    border-radius: 25px;
+    width: 25%;
+    height: 40%;
+    transition: all 0.2s;
+}
+.inputButton input[value=Registrarme]{
+    border: 1px solid #C1D96C;
+    background-color: #C1D96C;
+    font-size: 100%;
+}
+.inputButton input[value=Volver]{
+    border: 1px solid red;
+    background: transparent;
+    font-size: 100%;
+}
+.inputButton input[value=Registrarme]:hover{
+    cursor: pointer;
+    width: 30%;
+    background-color: rgba(193, 217, 108, 0.5);
+}
+.inputButton input[value=Volver]:hover{
+    cursor: pointer;
+    width: 30%;
+    background-color: red;
+}
+@media screen and (max-width: 1050px) {
+    .contRegister{
+        background-size: 200%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .contRegister .contForm{
+        width: 60%;
+    }
+    .contRegister{
+        background-size: 400%;
+    }
+    .inputButton input[value=Registrarme]{
+        width: 40%;
+    }
+    .inputButton input[value=Volver]{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .contRegister .contForm{
+        width: 100%;
+    }
+    .contRegister{
+        background-size: 400%;
+    }
+    .inputButton input[value=Registrarme]{
+        width: 40%;
+    }
+    .inputButton input[value=Volver]{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 390px) {
+    .contRegister .contForm{
+        width: 100%;
+    }
+    .contRegister{
+        background-size: 400%;
+    }
+    .inputButton input[value=Registrarme]{
+        width: 40%;
+    }
+    .inputButton input[value=Volver]{
+        width: 40%;
+    }
+}
+
+@media screen and (min-height: 864px) and (max-width: 490px){
+    .contRegister .contForm{
+        width: 100%;
+    }
+    .contRegister{
+        background-size: 400%;
+    }
+    .inputButton input[value=Registrarme]{
+        width: 40%;
+    }
+    .inputButton input[value=Volver]{
+        width: 40%;
+    }
+}
+@media screen and (height: 1180px) and (width: 820px){
+    .contRegister .contForm{
+        width: 80%;
+    }
+    .contRegister{
+        background-size: 400%;
+    }
+    .inputButton input[value=Registrarme]{
+        width: 40%;
+    }
+    .inputButton input[value=Volver]{
+        width: 40%;
+    }
+}
+@media screen and (height: 1368px) and (width: 912px){
+    .contRegister .contForm{
+        width: 100%;
+    }
+    .contRegister{
+        background-size: 400%;
+    }
+    .inputButton input[value=Registrarme]{
+        width: 40%;
+    }
+    .inputButton input[value=Volver]{
+        width: 40%;
+    }
 }

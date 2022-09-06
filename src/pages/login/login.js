@@ -13,14 +13,11 @@ function Login() {
 
     return ( 
         <div className="login">
-            <div className='logoCont'/>
-            <div className='contForm'>
                 <div className='form'>
                     <Cabecera/>
                     <Formulario register = {register} handleSubmit = {handleSubmit}/>
                     <Footer/>
                 </div>
-            </div>
             <ToastContainer />
         </div>
      );
