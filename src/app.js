@@ -13,7 +13,21 @@ function App() {
   
   const path = window.location.pathname
 
-  const pathPermit = ["/", "/register"]
+  const pathPermit = [
+        { path      :"/",
+          component : <Login/>
+        }, 
+        { path      : "/register",
+          component : <Register/>
+        },
+        {
+          "path"    :"/forgetPw",
+          component : <ForgetPw/>
+        }]
+  
+  const permited = []
+
+  pathPermit.map((v) => permited.push(v.path))
 
   const EnterApp = () => {
     if(path.search("home") != -1){
@@ -31,12 +45,10 @@ function App() {
   return (
     <>
         <Routes>
-          <Route exact path='/' element={<Login/>}/>
-          <Route exact path='/register' element={<Register/>}/>
-          <Route exact path='/forgetPw' element={<ForgetPw/>}/>
+          {pathPermit.map((v) => <Route exact path = {v.path} element = {v.component}/>)}
         </Routes>
 
-        {pathPermit.includes(path) ? <></> : EnterApp()}
+        {permited.includes(path) ? <></> : EnterApp()}
 
     </>
   );
