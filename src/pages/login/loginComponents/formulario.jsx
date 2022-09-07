@@ -39,6 +39,7 @@ const Formulario = (props) => {
        
         var result  = await (await oauth(data)).data
         
+        
         var settings = {}
 
         if(result != "no puede ingresar"){
@@ -48,6 +49,8 @@ const Formulario = (props) => {
             settings["type"]   = toast.TYPE.SUCCESS
             settings["render"] = "usuario valido"
             settings["href"]   = "./home"
+
+            console.log(user)
         }else{
             settings["type"]   = toast.TYPE.WARNING
             settings["render"] = "usuario o contraseña incorrecta"
@@ -61,12 +64,12 @@ const Formulario = (props) => {
                 autoClose: 1000,
                 render: settings["render"],
                 transition:transition
-                })
-
-                window.location.href = settings["href"]   
+                })    
             },1000)
+
+            
         
-        
+            
     }
 
     return <>

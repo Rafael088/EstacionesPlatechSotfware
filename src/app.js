@@ -1,72 +1,27 @@
-import {Route, Router, Routes} from 'react-router-dom';
+import {Route, Router, Routes, Navigate} from 'react-router-dom';
 import Login from './pages/login/login.js';
 import Home from './pages/interfaces/Home.js';
 import Register from './pages/interfaces/Register.js';
 
-import Navbar from './components/navBar';
-
-import Estado from './components/Estado.js';
-import Fallos from './components/Fallos.js';
-import IA from './components/Ia'
 import Errores from './components/errores.jsx';
 
-import { 
-  FcElectronics,
-  FcFlashOn,
-  FcTreeStructure } 
-  from "react-icons/fc";
+import HomeRoutes from './routes/home';
+import HomeWrapper from './components/homeWrapper'
 
 function App() {
   
-  const buttons = [
-    {
-      name:"Estados",
-      path:"/home/estados",
-      component : <Estado/>,
-      icon : <FcElectronics size={'3em'} />
-    },
-    {
-      name:"Fallos",
-      path:"/home/fallos",
-      component : <Fallos/>,
-      icon : <FcFlashOn size = {'3em'} />
-    },
-    {
-      name:"IA",
-      path:"/home/IA",
-      component : <IA/>,
-      icon : <FcTreeStructure size = {'3em'} />
-    }
-  ]
-
   const path = window.location.pathname
-
-  console.log(path)
 
   const pathPermit = ["/", "/register"]
 
-  const Home = () => {
-    return <>
-      <div className="contHome">
-          <div className='contPublic'>
-            <Navbar buttons={buttons}/>
-              <div className='contBody'>
-              <Routes>
-                  {buttons.map((v, i) => <Route path = {v.path} element = {v.component} key = {i}/>)}
-              </Routes>
-              </div>
-          </div>
-        </div>
-    </>
-  }
-
   const EnterApp = () => {
     if(path.search("home") != -1){
-      return Home()
+      return HomeWrapper()
     }else{
       return <>
         <Routes>
-            <Route path = "*" element = {<Errores/>}/>
+            <Route path = "/page-not-found" element = {<Errores/>}/>
+            <Route path = "*" element = {<Navigate to="/page-not-found" />}/>
         </Routes>
       </>
     }
@@ -79,7 +34,7 @@ function App() {
           <Route exact path='/register' element={<Register/>}/>
         </Routes>
 
-      {pathPermit.includes(path) ? <></> : EnterApp()}
+        {pathPermit.includes(path) ? <></> : EnterApp()}
 
     </>
   );
