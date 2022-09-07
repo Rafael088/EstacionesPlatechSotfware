@@ -53,14 +53,16 @@
 }
 .contNavBar .contButtons{
     width: 100%;
-    height: 80%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
 }
 .contNavBar .contFooterNav{
     width: 100%;
-    height: 10%;
+    height: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,20 +73,17 @@
     border: none;
     color: red;
     border-radius: 35px;
-    width: 60%;
-    height: 50%;
+    width: 80%;
+    height: 40%;
 }
 .contFooterNav input[type='button']:hover{
     border: 1px solid red;
     color: #000000;
 }
-.contNavBar .contButtons .contLink{
-    width: 100%;
-    height: 10%;
-}
+
 .contNavBar .contButtons .btt{
     width: 100%;
-    height: 100%;
+    height: 17%;
     display: flex;
     text-decoration: none;
     flex-direction: row;
@@ -95,7 +94,7 @@
 }
 .contNavBar .contButtons .bttn{
     width: 100%;
-    height: 100%;
+    height: 17%;
     text-decoration: none;
     color: rgb(0, 0, 0);
     display: flex;
@@ -125,20 +124,7 @@
     
     background-color: rgba(2, 115, 30, 0.6);
 }
-.contNavBar button{
-    width: 60%;
-    height: 5%;
-    border: none;
-    background-color: rgba(202, 36, 36, 0.6);
-    border-radius: 10px;
-    transition: all 0.2s;
-}
-.contNavBar button:hover{
-    cursor: pointer;
-    width: 80%;
-    border: 1px solid rgba(255, 0, 0, 0.8);
-    background-color: rgba(255, 255, 255, 0.5);
-}
+
 .contBody .contHead:hover{
     cursor: default;
 }

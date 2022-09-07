@@ -3,6 +3,7 @@ import ForgetPwThree from "../../components/ForgetPwThree";
 import ForgetPwTwo from "../../components/ForgetPwTwo";
 import React, { useState } from 'react';
 import AnimPages from "../../components/AnimPages";
+import '../../css/forgetPw.css';
 
 function ForgetPw() {
     var [varOne, setVarOne] = useState(true);
@@ -12,7 +13,7 @@ function ForgetPw() {
     function continuar() {
         switch (index) {
             case 0:
-                setVarOne(null)
+                setVarOne(false)
                 setVarTwo(true)
                 index++ 
                 //Mandar Codigo al correo
@@ -41,7 +42,7 @@ function ForgetPw() {
                     break;
             case 2:
                 setVarThree(false)
-                setVarTwo(true)
+                setVarTwo(false)
                 //Volvio al componente 2
                 break;
         }
@@ -49,7 +50,7 @@ function ForgetPw() {
 
     return ( 
         <div className="contForget">
-            <div className="contPublic">
+            <div className="contPublicf">
                 <div className="contBody">
                     <h1>Restablecer Contraseña</h1>
                     <AnimPages state={index}/>

@@ -1,3 +1,4 @@
+import '../css/forgetPw.css';
 function ForgetPwOne(props) {
     
     return ( 

@@ -1,50 +1,84 @@
 .animPages{
     width: 100%;
-    height: 7%;
+    height: 10%;
+    margin: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: transparent;
 }
+.animPages p{
+    font-size: 20px;
+}
 .animPages .btnTleft{
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     border-radius: 50px;
     background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
 }
 
 .animPages .btnCleft{
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     border-radius: 50px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
 }
 /**/
 .animPages .btnCmid{
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     border-radius: 50px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
 }
 .animPages .btnTmid{
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     border-radius: 50px;
     background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
 }
 /**/
 .animPages .btnCright{
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     border-radius: 50px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
 }
 .animPages .btnTright{
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     border-radius: 50px;
     background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
 }
 
 /**/
