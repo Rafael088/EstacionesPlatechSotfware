@@ -18,6 +18,9 @@ export default function Navbar({buttons}) {
           })}
           
       </div>
+      <div className="contFooterNav">
+        <input type="button" value="Cerrar Sesion"/>
+      </div>
     </div>
     </>
 }

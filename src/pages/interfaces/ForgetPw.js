@@ -61,7 +61,6 @@ function ForgetPw() {
                     <input type="button" name="Volver" value="Volver" onClick={volver}/>
                     <input type="button" name="Continuar" value="Continuar" onClick={continuar}/>
                 </div>
-                
             </div>
         </div>
      );
