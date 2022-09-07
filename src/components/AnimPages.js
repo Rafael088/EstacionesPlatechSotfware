@@ -1,3 +1,4 @@
+import '../css/animPages.css';
 function AnimPages(state) {
     switch (state) {
         case 0:
@@ -14,20 +15,20 @@ function AnimPages(state) {
     }
     return ( 
         <div className="animPages">
-            <div className={state=0?'btnTleft':'btnCleft'}>
-                1
+            <div className={state=0?'btnCleft':'btnTleft'}>
+                <p>1</p>
             </div>
-            <div className={state=2?'lineDleft':'lineAleft'}>
+            <div className={state=2?'lineAleft':'lineDleft'}>
                 
             </div>
-            <div className={state=1?'btnTmid':'btnCmid'}>
-                2
+            <div className={state=1?'btnCmid':'btnTmid'}>
+                <p>2</p>
             </div>
-            <div className={state=1?'lineAright':'lineDright'}>
+            <div className={state=1?'lineDright':'lineAright'}>
                 
             </div>
-            <div className={state=2?'btnTright':'btnCright'}>
-                3
+            <div className={state=2?'btnDright':'btnTright'}>
+                <p>3</p>
             </div>
         </div>
      );
