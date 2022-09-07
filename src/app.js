@@ -45,7 +45,7 @@ function App() {
   return (
     <>
         <Routes>
-          {pathPermit.map((v) => <Route exact path = {v.path} element = {v.component}/>)}
+          {pathPermit.map((v, i) => <Route exact path = {v.path} element = {v.component} key = {i}/>)}
         </Routes>
 
         {permited.includes(path) ? <></> : EnterApp()}

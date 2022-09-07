@@ -7,6 +7,7 @@ import { SetUser, getUser } from '../../../redux/oauth/Slice';
 import { useDispatch, useSelector } from 'react-redux';
 
 import oauth from "../../../services/login";
+import jwt_decode from 'jwt-decode'
 
 import 'react-toastify/dist/ReactToastify.css';
 import "animate.css/animate.min.css";
@@ -42,19 +43,20 @@ const Formulario = (props) => {
         
         var settings = {}
 
-        if(result != "no puede ingresar"){
+        if(result !== "no puede ingresar"){
 
+            localStorage.setItem('user', JSON.stringify(jwt_decode(result)))
             dispatch(SetUser(result))
-
+            
             settings["type"]   = toast.TYPE.SUCCESS
             settings["render"] = "usuario valido"
             settings["href"]   = "./home"
 
-            console.log(user)
+            console.log("este es el local storage",user)
         }else{
             settings["type"]   = toast.TYPE.WARNING
             settings["render"] = "usuario o contraseña incorrecta"
-            settings["href"]   = "./error"  
+            settings["href"]   = "./"  
         }
 
         setTimeout(()=>
@@ -64,13 +66,13 @@ const Formulario = (props) => {
                 autoClose: 1000,
                 render: settings["render"],
                 transition:transition
-                })    
-            },1000)
+                })
 
-            
-        
-            
-    }
+                window.location.href = settings['href']
+
+            },1000)
+        }
+
 
     return <>
     

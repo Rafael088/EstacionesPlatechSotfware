@@ -2,10 +2,12 @@ import { createSlice } from '@reduxjs/toolkit'
 import jwt_decode from 'jwt-decode'
 import oauth from '../../services/login'
 
+const user = localStorage.getItem('user')
+
 export const oauthSlice = createSlice({
   name: 'oauth',
   initialState: {
-    value: "no ha ingresado nada",
+    value: user ? user : null,
   },
   reducers: {
     SetUser: (state, action) => {
