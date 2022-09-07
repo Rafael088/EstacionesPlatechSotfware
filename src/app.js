@@ -9,6 +9,7 @@ import Estado from './components/Estado.js';
 import Fallos from './components/Fallos.js';
 import IA from './components/Ia'
 import Errores from './components/errores.jsx';
+import ForgetPw from './pages/interfaces/ForgetPw.js';
 
 import { 
   FcElectronics,
@@ -77,6 +78,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Login/>}/>
           <Route exact path='/register' element={<Register/>}/>
+          <Route exact path='/forgetPw' element={<ForgetPw/>}/>
         </Routes>
 
       {pathPermit.includes(path) ? <></> : EnterApp()}

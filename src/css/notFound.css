@@ -1,0 +1,137 @@
+.contNotFound{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contNotFound .cardNotFound{
+    width: 40%;
+    height: 70%;
+    background-image: url('../imgs/jem-sahagun--kqC3rZEMBI-unsplash.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 35px;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 70px;
+    box-shadow: 1px 1px 15px 2px rgba(255, 255, 255, 0.308);
+}
+.contNotFound .cardNotFound h1{
+    color: white;
+    font-size: 90px;
+    font-style: unset;
+    padding-bottom: 20px;
+}
+.contNotFound .cardNotFound p{
+    color: white;
+    font-size: 30px;
+    font-style: oblique;
+    font-variant:small-caps;
+    font-synthesis: style;
+}
+.figure1{
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    background-color: rgba(240, 248, 255, 0.247);
+    border:none;
+    box-shadow: 1px 1px 25px 10px rgba(255, 255, 255, 0.308);
+    right: 80%;
+    transition: all 0.2s;
+    animation: animFigu1 2.4s infinite;
+}
+.figure2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: rgba(240, 248, 255, 0.247);
+    border:none;
+    box-shadow: 1px 1px 25px 10px rgba(255, 255, 255, 0.308);
+    right: 10%;
+    transition: all 0.2s;
+    animation: animFigu2 4s infinite;
+}
+.figure3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 10%;
+    top: 0%;
+    transform: rotate(-90deg);
+    transition: all 0.2s;
+    animation: animFigu3 4s infinite;
+}
+@keyframes animFigu1 {
+    0%{
+        right: 80%;
+        top: 50%;
+    }
+    50%{
+        top: 10%;
+    }
+    100%{
+        top: 50%;
+    }
+}
+@keyframes animFigu2 {
+    0%{
+        right: 10%;
+        top: 50%;
+        transform: rotate(10deg);
+    }
+    50%{
+        top: 70%;
+        right: 40%;
+        transform: rotate(100deg);
+    }
+    100%{
+        top: 50%;
+        right: 10%;
+        transform: rotate(10deg);
+    }
+}
+@keyframes animFigu3 {
+    0%{
+        right: 10%;
+        
+    }
+    100%{
+        right: 100%;
+        
+    }
+}
+@media screen and (max-width: 890px){
+    .contNotFound .cardNotFound{
+        background-size: 150%;
+    }
+    .contNotFound .cardNotFound p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 600px){
+    .contNotFound .cardNotFound{
+        background-size: 200%;
+    }
+    .contNotFound .cardNotFound h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 500px){
+    .contNotFound .cardNotFound{
+        width: 100%;
+        background-size: 400%;
+    }
+    .contNotFound .cardNotFound h1{
+        font-size: 40px;
+    }
+    .contNotFound .cardNotFound p{
+        font-size: 20px;
+    }
+}
