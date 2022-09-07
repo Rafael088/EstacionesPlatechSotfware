@@ -21,6 +21,12 @@ function Register() {
     
     return ( 
         <div className="contRegister">
+            <div className='imgLeft'>
+                <div className='imgLogo'>
+                    
+                </div>
+                
+            </div>
             <div className='contForm'>
                     <div className='headerForm'>
                         <h3>Registrate</h3>

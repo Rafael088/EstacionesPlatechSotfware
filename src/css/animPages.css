@@ -1,0 +1,72 @@
+.animPages{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.animPages .btnTleft{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: greenyellow;
+}
+
+.animPages .btnCleft{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: white;
+}
+/**/
+.animPages .btnCmid{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: white;
+}
+.animPages .btnTmid{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: greenyellow;
+}
+/**/
+.animPages .btnCright{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: white;
+}
+.animPages .btnTright{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: greenyellow;
+}
+
+/**/
+.animPages .lineDleft{
+    width: 200px;
+    height: 2px;
+    background-color: black;
+}
+
+.animPages .lineAleft{
+    width: 200px;
+    height: 2px;
+    background-color: greenyellow;
+}
+.animPages .lineDright{
+    width: 200px;
+    height: 2px;
+    background-color: black;
+}
+
+.animPages .lineAright{
+    width: 200px;
+    height: 2px;
+    background-color: greenyellow;
+}

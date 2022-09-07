@@ -4,6 +4,7 @@ import Home from './pages/interfaces/Home.js';
 import Register from './pages/interfaces/Register.js';
 
 import Errores from './components/errores.jsx';
+import ForgetPw from './pages/interfaces/ForgetPw.js';
 
 import HomeRoutes from './routes/home';
 import HomeWrapper from './components/homeWrapper'
@@ -32,6 +33,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Login/>}/>
           <Route exact path='/register' element={<Register/>}/>
+          <Route exact path='/forgetPw' element={<ForgetPw/>}/>
         </Routes>
 
         {pathPermit.includes(path) ? <></> : EnterApp()}
