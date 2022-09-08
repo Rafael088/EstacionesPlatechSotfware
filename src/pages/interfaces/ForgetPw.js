@@ -9,6 +9,7 @@ function ForgetPw() {
     var [varTwo, setVarTwo] = useState(null);
     var [varThree, setVarThree] = useState(null);
     var index = 0;
+    
     function continuar() {
         switch (index) {
             case 0:

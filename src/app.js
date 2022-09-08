@@ -1,4 +1,6 @@
 import {Route, Router, Routes, Navigate} from 'react-router-dom';
+import { AiOutlineFileExcel} from "react-icons/ai";
+
 import Login from './pages/login/login.js';
 import Home from './pages/interfaces/Home.js';
 import Register from './pages/interfaces/Register.js';
@@ -35,7 +37,16 @@ function App() {
     }else{
       return <>
         <Routes>
-            <Route path = "/page-not-found" element = {<Errores/>}/>
+            <Route path = "/page-not-found" element = {<Errores 
+                                                          type = {"cardNotFound"} 
+                                                          titulo1 = {<h1>4<AiOutlineFileExcel/>4</h1>} 
+                                                          titulo2 = {"Pagina no Encontrada"}/>}/>
+            
+            <Route path = "/session-expired" element = {<Errores 
+                                                          type = {"cardSesion"} 
+                                                          titulo1 = {""} 
+                                                          titulo2 = {"Sesion expirada"}/>}/>
+
             <Route path = "*" element = {<Navigate to="/page-not-found" />}/>
         </Routes>
       </>
