@@ -1,22 +1,27 @@
 import React from "react";
-import '../css/notFound.css';
-import { AiOutlineFileExcel} from "react-icons/ai";
+
 import { HiPaperAirplane} from "react-icons/hi";
-const Errores = () => {
-    return <div className="contNotFound">
-        <div className="figure1">
-            
-        </div>
-        <div className="figure2">
-            
-        </div>
+
+import '../css/notFound.css';
+
+const Errores = ({...props}) => {
+
+    const {type, titulo1, titulo2} = props
+
+    return <>
+    <div className="contNotFound">
+        <div className="figure1"/>
+        <div className="figure2"/>
         <HiPaperAirplane className="figure3"/>
         
-        <div className="cardNotFound">
-            <h1>4<AiOutlineFileExcel className="iconFound"/>4</h1>
-            <p>Pagina no Encontrada</p>
+        <div className={type} >
+            {titulo1}
+            <p>{titulo2}</p>
         </div>
     </div>
+    
+    </>
+
 }
 
 export default Errores

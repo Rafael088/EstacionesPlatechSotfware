@@ -19,7 +19,7 @@ const HomeWrapper = () => {
     }
     
     subRutas.map((v) => RutasRevi.push(ruta + v.name))
-
+    
     if(!RutasRevi.includes(path)){
         window.location.href = '../page-not-found'
     }

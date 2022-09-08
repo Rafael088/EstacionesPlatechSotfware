@@ -7,7 +7,6 @@ import { SetUser, getUser } from '../../../redux/oauth/Slice';
 import { useDispatch, useSelector } from 'react-redux';
 
 import oauth from "../../../services/login";
-import jwt_decode from 'jwt-decode'
 
 import 'react-toastify/dist/ReactToastify.css';
 import "animate.css/animate.min.css";
@@ -39,13 +38,12 @@ const Formulario = (props) => {
         })
        
         var result  = await (await oauth(data)).data
-        
-        
+    
         var settings = {}
 
         if(result !== "no puede ingresar"){
 
-            localStorage.setItem('user', JSON.stringify(jwt_decode(result)))
+            localStorage.setItem('user', JSON.stringify(result))
             dispatch(SetUser(result))
             
             settings["type"]   = toast.TYPE.SUCCESS

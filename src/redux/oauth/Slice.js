@@ -7,11 +7,10 @@ const user = localStorage.getItem('user')
 export const oauthSlice = createSlice({
   name: 'oauth',
   initialState: {
-    value: user ? user : null,
+    value: user ? jwt_decode(user.replace('Bearer','')) : null,
   },
   reducers: {
     SetUser: (state, action) => {
-      console.log(action)
       state.value = jwt_decode(action.payload)
     },
   },

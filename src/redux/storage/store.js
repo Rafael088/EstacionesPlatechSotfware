@@ -1,9 +1,11 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
-import counterReducer from '../oauth/Slice';
+import oauthReducer from '../oauth/Slice';
+import headerReducer from '../header/Slice'
 
 export default configureStore({
   reducer: {
-    oauth: counterReducer,
+    oauth:  oauthReducer,
+    header: headerReducer,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
