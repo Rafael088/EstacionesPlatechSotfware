@@ -7,6 +7,7 @@ import MapView            from  "./mapView";
 
 
 import '../css/estado.css';
+import HeadComps from "./HeadComps";
 
 
 function Estado() {
