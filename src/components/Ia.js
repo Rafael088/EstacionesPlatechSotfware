@@ -5,8 +5,6 @@ import HeadComps from './HeadComps';
 
 function Ia() {
     
-
-
     return ( 
         <div className="contIa">
             <HeadComps titulo="Inteligencia Artificial" />

@@ -13,13 +13,15 @@ import {
     from '@coreui/react'
 
 import WidgetChart from "./widget";
-
+import NavBarButtons from "./navBarButtons";
+import IaChart from "./IaChart";
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const ModalA = ({...props}) => {
 
     const {modalIsOpen, setIsOpen, ChartLineConfig} = props
     const [titulos , setTitulos] = React.useState(["temp","hum"])
+    const [grafica, setGrafica] = React.useState("sensor")
 
     const pages = [
         ["temp"       , "hum"],
@@ -29,6 +31,17 @@ const ModalA = ({...props}) => {
 
     const closeModal = () => {
         setIsOpen(false);
+    }
+
+    const ShowSensorChart = () => {
+        return <>
+        {titulos.map((v,i) => <WidgetChart 
+                    ChartLineConfig = {ChartLineConfig} 
+                    titulo = {`${v} actual`} 
+                    flag = {v} 
+                    key = {i}
+        />)}
+        </>
     }
 
     return <>
@@ -44,13 +57,8 @@ const ModalA = ({...props}) => {
             </h2>
     </CModalHeader>
     <CModalBody>
-        {titulos.map((v,i) => <WidgetChart 
-                                ChartLineConfig = {ChartLineConfig} 
-                                titulo = {`${v} actual`} 
-                                flag = {v} 
-                                key = {i}
-        />)}
-
+        <NavBarButtons setter = {setGrafica}/>
+        {grafica == "sensor" ? ShowSensorChart() : <IaChart/>}
     </CModalBody>
 
     <CPagination align="center" aria-label="Page navigation example">
