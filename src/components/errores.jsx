@@ -9,7 +9,9 @@ const Errores = ({...props}) => {
     const {type, titulo1, titulo2} = props
 
     return <>
-    <div className="contNotFound">
+    <div className="contNotFound" onClick={() => {
+        window.location.href = "../"
+        }}>
         <div className="figure1"/>
         <div className="figure2"/>
         <HiPaperAirplane className="figure3"/>

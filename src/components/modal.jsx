@@ -1,9 +1,7 @@
 import React from "react";
 
 import {
-    CWidgetStatsB, 
-    CCol, 
-    CRow, 
+
     CModal, 
     CModalHeader, 
     CModalBody,
@@ -14,36 +12,22 @@ import {
 } 
     from '@coreui/react'
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-
 import WidgetChart from "./widget";
 
-  const ChartLineConfig = {
-    width: 650,
-    height: 200,
-    configMargin: { top: 0, right: 0, bottom: 0, left: 0 },
-    data:[
-        {"temperatura": 20,  tiempo:"1:00"},
-        {"temperatura": 40,  tiempo:"2:00"},
-        {"temperatura": 20,  tiempo:"3:00"},
-        {"temperatura": 10,  tiempo:"4:00"},
-        {"temperatura":-10,  tiempo:"5:00"},
-    ],
-    tags:{
-        x :"tiempo",
-        y : "temperatura"
-    }
-}
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 const ModalA = ({...props}) => {
-    let subtitle;
-    const {modalIsOpen, setIsOpen} = props
-    const [titulos , setTitulos] = React.useState(["temperaturas","humedad"])
 
-    function openModal() {
-        setIsOpen(true);
-    }
+    const {modalIsOpen, setIsOpen, ChartLineConfig} = props
+    const [titulos , setTitulos] = React.useState(["temp","hum"])
 
-    function closeModal() {
+    const pages = [
+        ["temp"       , "hum"],
+        ["lux"        , "temp"],
+        ["anenoMeter" , "rain"]
+    ]
+
+    const closeModal = () => {
         setIsOpen(false);
     }
 
@@ -60,30 +44,23 @@ const ModalA = ({...props}) => {
             </h2>
     </CModalHeader>
     <CModalBody>
-        {titulos.map((v) => <WidgetChart ChartLineConfig = {ChartLineConfig} titulo = {`${v} actual`}/>)}
+        {titulos.map((v,i) => <WidgetChart 
+                                ChartLineConfig = {ChartLineConfig} 
+                                titulo = {`${v} actual`} 
+                                flag = {v} 
+                                key = {i}
+        />)}
+
     </CModalBody>
 
     <CPagination align="center" aria-label="Page navigation example">
-   
-    <CPaginationItem onClick={() =>
-        {
-            setTitulos(["temperatura", "humedad"])
-        }}>1
-    </CPaginationItem>
-    <CPaginationItem onClick={() =>
-        {
-            setTitulos(["luminocidad", "direccion del viento"])
-        }}>2
-    </CPaginationItem>
-    <CPaginationItem onClick={() =>
-        {
-            setTitulos(["velocidad del viento", "precipitacion"])
-        }}>3
-    </CPaginationItem>
+        {pages.map((v,i) => <CPaginationItem onClick = {() => setTitulos(v)}> {i} </CPaginationItem>)}
     </CPagination>
+
     <CModalFooter>
         <CButton color="danger" onClick = {() => {closeModal()}}>Cerrar</CButton>
     </CModalFooter>
+
       </CModal>
     </>
 }

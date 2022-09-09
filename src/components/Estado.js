@@ -12,7 +12,7 @@ import '../css/estado.css';
 function Estado() {
 
     const [Antenas , setAntenas] = React.useState(null)
-    const HEADER = useSelector(getHeader) + 'U'
+    const HEADER = useSelector(getHeader)
 
     useEffect(()=> {
             const asyncEffect = async() =>{
@@ -22,18 +22,15 @@ function Estado() {
                     const result  = await (await Ranthenna(HEADER)).data
 
                     result.map((v) => antenas.push({
-                        lat:v.ubication.latitud,
-                        lon:v.ubication.longitud
+                        lat : parseFloat(v.ubication.latitud),
+                        lon : parseFloat(v.ubication.longitud)
                     }))
 
                     setAntenas(antenas)
 
                 }catch(e){
-                    if(e.response.invalido == "token invalido"){
-                        console.log("hola",e.response.data)
-                    }
-                    console.log(e.response.data)
-                    
+                    localStorage.removeItem("user")
+                    window.location.href = "../session-expired"
                 }
             }
             
@@ -41,10 +38,11 @@ function Estado() {
     },[])
 
     const MapComponent = () => {
+      
         return <>
             <div className="contEstado">
                 <h2>Estado de los sensores</h2>
-                <MapView />
+                <MapView antenas = {Antenas}/>
             </div>
         </>
     }
