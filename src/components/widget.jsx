@@ -45,11 +45,8 @@ const WidgetChart = ({...props}) => {
             />
             
         </CCol> 
-        <CCol xs={4}> 
+        <CCol xs={10}> 
             <ChartLine props = {ChartLineConfig}/>
-        </CCol> 
-        <CCol xs={4}> 
-            <IaChart/>
         </CCol> 
     </CRow> 
     </>
