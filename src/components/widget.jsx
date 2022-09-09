@@ -6,7 +6,7 @@ import {
     } from '@coreui/react'
 
 import ChartLine from './chartLine';
-
+import IaChart from './IaChart';
 
 import { FcCapacitor } from "react-icons/fc";
 
@@ -45,8 +45,11 @@ const WidgetChart = ({...props}) => {
             />
             
         </CCol> 
-        <CCol xs={10}> 
+        <CCol xs={4}> 
             <ChartLine props = {ChartLineConfig}/>
+        </CCol> 
+        <CCol xs={4}> 
+            <IaChart/>
         </CCol> 
     </CRow> 
     </>
