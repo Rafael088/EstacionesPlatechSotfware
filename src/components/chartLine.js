@@ -3,14 +3,15 @@ import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend, Responsi
 
 const ChartLine = (props) => {
 
-    const {width, height, configMargin, data, tags} = {...props.props}
+    const {value, xtag, ytag} = {...props.props}
+    const configMargin = { top: 0, right: 0, bottom: 0, left: 0 }
     
     return <>
     <div>
     <ResponsiveContainer width="100%" height={200}>
-        <LineChart  data={data} margin= {configMargin}>
-          <Line type="monotone" dataKey={tags.y} stroke="#8884d7" />
-          <XAxis dataKey={tags.x} />
+        <LineChart  data={value} margin= {configMargin}>
+          <Line type="monotone" dataKey={ytag} stroke="#8884d7" />
+          <XAxis dataKey={xtag} />
           <CartesianGrid stroke="#ccc" strokeDasharray="5 5"/>
           <Tooltip /> 
           <Legend />
