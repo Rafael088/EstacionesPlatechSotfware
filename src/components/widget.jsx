@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/widgets.css';
 import {
     CWidgetStatsC, 
     CCol,
@@ -30,25 +31,22 @@ const WidgetChart = ({...props}) => {
 
     }
     return <>
-    <CRow>
-        <CCol xs={1}>
-            
+    <div className='contGraphi'>
+        <div className='contWidget'>
             <CWidgetStatsC
-            className="mb-3"
+            className="widget"
             progress={{ color: 'success', 
                         value: value}}
 
             title = {<h3>{titulo}</h3>}
             icon = {<FcCapacitor size={'3em'}/>}
             value = {<h1>{`${value} ${simbols?.[flag]}`}</h1>}
-
             />
-            
-        </CCol> 
-        <CCol xs={10}> 
+        </div> 
+        <div className='contChartLine'> 
             <ChartLine props = {ChartLineConfig}/>
-        </CCol> 
-    </CRow> 
+        </div> 
+    </div> 
     </>
 }
 

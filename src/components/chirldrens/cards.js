@@ -1,14 +1,9 @@
-function Cards({titulo, mes, porcentaje}) {
+function Cards({titulo, text, datos}) {
     return ( 
         <div className='contCard'>
-            <div className="cardLeft">
-                <p>{titulo}</p>
-                <p>{mes}</p>
-            </div>
-            <div className="cardRight">
-                <p>{porcentaje}</p>
-            </div>
-              
+            <h5>{titulo}</h5>
+            <p>{text}</p>
+            <p>{datos}</p>  
         </div>
      );
 }

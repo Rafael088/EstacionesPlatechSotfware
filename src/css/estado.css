@@ -10,8 +10,7 @@
     border-radius: 15px;
     backdrop-filter: blur(10px);
     border-radius: 25px;
-    box-shadow: 1px 1px 10px 10px rgba(3, 140, 37, 0.3);
-    transition-duration: 0.5s;
+   transition-duration: 0.5s;
    
 }
 .contMap{
@@ -26,6 +25,7 @@
 .map{
     width: 100%;
     height: 100%;
+    
     animation: animContEstado 2s ease-out;
 }
 @keyframes animContEstado {

@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../css/modal.css';
 import {
 
     CModal, 
@@ -15,7 +15,7 @@ import {
 import WidgetChart from "./widget";
 import NavBarButtons from "./navBarButtons";
 import IaChart from "./IaChart";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ModalA = ({...props}) => {
 
@@ -32,15 +32,14 @@ const ModalA = ({...props}) => {
     const closeModal = () => {
         setIsOpen(false);
     }
-
     const ShowSensorChart = () => {
         return <>
-        {titulos.map((v,i) => <WidgetChart 
-                    ChartLineConfig = {ChartLineConfig} 
-                    titulo = {`${v} actual`} 
-                    flag = {v} 
-                    key = {i}
-        />)}
+            {titulos.map((v,i) => <WidgetChart 
+                        ChartLineConfig = {ChartLineConfig} 
+                        titulo = {`${v} actual`} 
+                        flag = {v} 
+                        key = {i}
+            />)}
         </>
     }
 
@@ -51,24 +50,27 @@ const ModalA = ({...props}) => {
         visible={modalIsOpen}
         onClose={closeModal}
       >
-    <CModalHeader align = "center"> 
-            <h2>
-                Estado de sensores
-            </h2>
-    </CModalHeader>
-    <CModalBody>
-        <NavBarButtons setter = {setGrafica}/>
-        {grafica == "sensor" ? ShowSensorChart() : <IaChart/>}
-    </CModalBody>
-
-    <CPagination align="center" aria-label="Page navigation example">
-        {pages.map((v,i) => <CPaginationItem onClick = {() => setTitulos(v)}> {i} </CPaginationItem>)}
-    </CPagination>
-
-    <CModalFooter>
-        <CButton color="danger" onClick = {() => {closeModal()}}>Cerrar</CButton>
-    </CModalFooter>
-
+        <div className="contModal"> 
+            <div className="modalHeader">
+                <div className="headerTitulo">
+                    <h2>
+                        Estado de Sensores
+                    </h2>
+                </div>
+                <NavBarButtons setter = {setGrafica}/>
+            </div>
+            <div className="modalBody">
+                {grafica == "sensor" ? ShowSensorChart() : <IaChart/>}
+            </div>
+            <div className="modalFooter">
+                <p>@platech</p>
+                <div className="buttonsFooter">
+                    {pages.map((v,i) => <button className="btnPagi" onClick = {() => setTitulos(v)}> {i} </button>)}
+                    
+                </div>
+                <button className="btnCerrar" onClick = {() => {closeModal()}}>Cerrar</button>
+            </div>
+        </div>
       </CModal>
     </>
 }

@@ -1,0 +1,166 @@
+.contBodyModal{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.contModal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contModal .modalHeader{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+}
+.contModal .modalHeader .headerTitulo{
+    width: 60%;
+    height: 100%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contModal .modalBody{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contButtonsModal{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+
+}
+.contModal .modalFooter{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.contModal .modalFooter .buttonsFooter{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contModal .modalFooter .buttonsFooter .btnPagi{
+    width: 7%;
+    height: 40%;
+    border: none;
+    margin: 5px;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+.contModal .modalFooter .buttonsFooter .btnPagi:hover{
+    background-color: transparent;
+    border: 2px solid #43B4EB;
+    width: 8%;
+    color: #43B4EB;
+}
+.contModal .modalFooter .btnCerrar{
+    background-color: rgb(162, 31, 31);
+    border: none;
+    width: 7%;
+    height: 60%;
+    border-radius: 10px;
+    color: aliceblue;
+    transition: all 0.2s;
+}
+.contModal .modalFooter .btnCerrar:hover{
+    width: 10%;
+    animation: animBtnc infinite 2s;
+    background-color: transparent;
+    color: red;
+
+}
+@keyframes animBtnc {
+    0%{
+        border: 2px solid rgb(162, 31, 31);
+    }
+    50%{
+        border: 2px solid rgb(255, 242, 0);
+    }
+    100%{
+        border: 2px solid rgb(162, 31, 31);
+    }
+}
+.contButtonsModal button{
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s;
+    width: 24%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.contButtonsModal button .icon{
+    size: 20px;
+    margin-right: 10px;
+}
+.contButtonsModal button:hover{
+    background-color: rgb(255, 255, 255);
+    width: 27%;
+    border-radius: 15px;
+}
+.contConfiaModal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.contConfiaModal .contCard{
+    width: 20%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    transition: all 0.3s;
+    background-color: #43B4EB;
+    box-shadow: 1px 1px 15px 2px black;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    font-size: 90%;
+
+}
+.contConfiaModal .confiaGraf{
+    width: 50%;
+    height: 80%;
+
+}
+.contConfiaModal .contCard:hover{
+    cursor: default;
+    height: 45%;
+}

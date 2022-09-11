@@ -7,7 +7,6 @@ const ChartLine = (props) => {
     const configMargin = { top: 0, right: 0, bottom: 0, left: 0 }
     
     return <>
-    <div>
     <ResponsiveContainer width="100%" height={200}>
         <LineChart  data={value} margin= {configMargin}>
           <Line type="monotone" dataKey={ytag} stroke="#8884d7" />
@@ -18,7 +17,6 @@ const ChartLine = (props) => {
           <YAxis />
         </LineChart>
     </ResponsiveContainer>
-    </div>
     </>
 }
 

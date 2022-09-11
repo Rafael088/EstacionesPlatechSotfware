@@ -18,13 +18,37 @@
     align-items: center;
     justify-content: space-around;
 }
+.contPublic .contFlotante{
+    position: fixed;
+    left: 50%;
+    top: 96%;
+    width: 14%;
+    height: 20%;
+    background-color: rgba(92, 173, 213, 0.9);
+    border-radius: 40px 40px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    padding-top: 5px;
+    transition: all 0.3s;
+    font-size: 15px;
+    backdrop-filter: blur(5px);
+}
+.contPublic .contFlotante:hover{
+    top: 81%;
+    background-color: rgba(90, 216, 107, 0.7);
+    
+    cursor: default;
+}
 .contBody{
     width: 80%;
     height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     border-radius: 15px;
     padding-right: 20px;
 }
@@ -69,16 +93,19 @@
     justify-content: center;
 }
 .contFooterNav input[type='button']{
-    background-color: transparent;
+    background-color: brown;
     border: none;
-    color: red;
-    border-radius: 35px;
-    width: 80%;
+    color: white;
+    border-radius: 5px;
+    width: 67%;
     height: 40%;
+    transition: all 0.2s;
 }
 .contFooterNav input[type='button']:hover{
     border: 1px solid red;
+    background-color: transparent;
     color: #000000;
+    width: 80%;
 }
 
 .contNavBar .contButtons .btt{

@@ -10,7 +10,7 @@ function Home() {
     <>      
       <div className="container">
         <Routes>
-        <Route path="/home" element={<Welcome/>} />
+          <Route path="/home" element={<Welcome/>} />
           <Route path="/home/Estados" element={<Estados />} />
           <Route path="/home/Fallos" element={<Fallos />} />
         </Routes>

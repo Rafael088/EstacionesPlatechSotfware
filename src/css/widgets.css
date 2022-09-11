@@ -1,0 +1,48 @@
+.contGraphi{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s;
+}
+.contWidget{
+    width: 23%;
+    height: 100%;
+    margin: 0%;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.contChartLine{
+    margin: 0%;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    
+    transition: all 0.3s;
+}
+.contWidget .widget{
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    color: white;
+    transition: all 0.3s;
+    background-color: #43B4EB;
+    box-shadow: 1px 1px 15px 2px black;
+    border-radius: 5px;
+}
+.contWidget .widget:hover{
+    cursor: default;
+    width: 100%;
+}
+.contGraphi .contChartLine:hover{
+    width: 55%;
+}
