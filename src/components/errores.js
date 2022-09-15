@@ -4,7 +4,7 @@ import { HiPaperAirplane} from "react-icons/hi";
 
 import '../css/notFound.css';
 
-const Errores = ({...props}) => {
+function Errores({...props}){
 
     const {type, titulo1, titulo2} = props
 

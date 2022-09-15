@@ -17,7 +17,7 @@ import NavBarButtons from "./navBarButtons";
 import IaChart from "./IaChart";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const ModalA = ({...props}) => {
+function ModalA({...props}){
 
     const {modalIsOpen, setIsOpen, ChartLineConfig} = props
     const [titulos , setTitulos] = React.useState(["temp","hum"])
