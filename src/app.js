@@ -5,7 +5,7 @@ import Login from './pages/login/login.js';
 import Home from './pages/interfaces/Home.js';
 import Register from './pages/interfaces/Register.js';
 
-import Errores from './components/errores.jsx';
+import Errores from './components/errores.js';
 import ForgetPw from './pages/interfaces/ForgetPw.js';
 
 import HomeRoutes from './routes/home';

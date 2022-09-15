@@ -2,7 +2,7 @@ import React from "react";
 import { FcBarChart, FcBullish } from "react-icons/fc";
 import { CButton, CRow, CCol } from "@coreui/react";
 
-const NavBarButtons = ({...props}) => {
+function NavBarButtons({...props}){
     
     const {setter} = props
     function hello() {

@@ -12,7 +12,7 @@ import ModalA from "./modal";
 import { anthennaService } from "../services/anthenna";
 import sensorId from "../services/sensor";
 
-const MapView = ({...props}) => {
+function MapView({...props}){
 
     const position = [5.070275, -75.513817]
     const HEADER   = useSelector(getHeader)

@@ -11,7 +11,7 @@ import IaChart from './IaChart';
 
 import { FcCapacitor } from "react-icons/fc";
 
-const WidgetChart = ({...props}) => {
+function WidgetChart({...props}){
     const {ChartLineConfig , titulo, flag} = props
 
     ChartLineConfig.value = ChartLineConfig.data?.[flag]

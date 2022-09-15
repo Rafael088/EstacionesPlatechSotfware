@@ -5,7 +5,7 @@ import HomeRoutes from '../routes/home'
 import { getUser } from '../redux/oauth/Slice';
 import { useSelector } from 'react-redux';
 
-const HomeWrapper = () => {
+function HomeWrapper(){
 
     const subRutas = HomeRoutes.subRutas
     const ruta     = HomeRoutes.ruta
