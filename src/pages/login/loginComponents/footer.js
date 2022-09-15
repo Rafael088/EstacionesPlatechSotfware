@@ -1,6 +1,6 @@
 import React from "react";
 import './css/footer.css';
-const Footer = () => {
+function Footer(){
     return <>      
         <div className='footerForm'>
             <div className='forgetPassword'>

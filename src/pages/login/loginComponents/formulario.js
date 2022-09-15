@@ -12,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import "animate.css/animate.min.css";
 import "./css/toast.css"
 
-const Formulario = (props) => {
+function Formulario(props){
 
     const {register, handleSubmit} = props 
     const dispatch = useDispatch()
