@@ -1,5 +1,5 @@
 
-const Cabecera = () => {
+function Cabecera(){
     return <>
         <div className='headerForm'>
             
