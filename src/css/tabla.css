@@ -1,0 +1,97 @@
+:root{
+    --primary-color: white;
+    --secondary-color: rgb(60, 63, 65);
+    --highlight-color: #3282b8;
+
+    --dt-status-available-color: greenyellow;
+    --dt-status-away-color: lightsalmon;
+    --dt-status-offline-color: rgb(93, 92, 92);
+}
+
+.contTablaFallos{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 15px;
+    overflow: auto;
+    color: black;
+}
+.contTablaFallos::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.contTablaFallos .tableHeaderTools{
+    width: 100%;
+    height: 9%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+}
+.contTablaFallos .tablaFallos{
+    border-collapse: collapse;
+    width: 90%;
+}
+.contTablaFallos .tablaFallos, th, td{
+  padding: 6px;  
+}
+.contTablaFallos .tablaFallos th{
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: 1px solid var(--dt-status-offline-color);
+}
+
+.contTablaFallos .tablaFallos .tdBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.contTablaFallos .tablaFallos .tdBtn .iconTd{
+    width: 18%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.contTablaFallos .tablaFallos .tdBtn .iconTd .iconT{
+    width: 70%;
+    height: 70%;
+    color: #33691E;
+    cursor: pointer;
+}
+.contTablaFallos .tablaFallos .tdBtn .iconTd .iconE{
+    width: 70%;
+    height: 70%;
+    color: #512DA8;
+    cursor: pointer;
+}
+.contTablaFallos .tablaFallos .tdBtn .iconTd .iconR{
+    width: 70%;
+    height: 70%;
+    color: rgb(181, 70, 70);
+    cursor: pointer;
+}
+.contTablaFallos .tablaFallos .tdBtn .iconTd .iconT:hover{
+    color: rgb(255, 255, 255);
+}
+.contTablaFallos .tablaFallos .tdBtn .iconTd .iconR:hover{
+    color: rgb(255, 255, 255);
+}
+.contTablaFallos .tablaFallos .tdBtn .iconTd .iconE:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+.contTablaFallos .tablaFallos tbody tr:nth-child(even){
+    background-color: rgb(83, 158, 232);
+}
+.contTablaFallos .tablaFallos tbody tr:hover{
+    background-color: #9AC430;
+    cursor: default;
+}

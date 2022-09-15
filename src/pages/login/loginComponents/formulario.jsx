@@ -76,14 +76,14 @@ const Formulario = (props) => {
     
         <form className='formInput' onSubmit={ handleSubmit((data) => submit(data))}>
             <div className='inputUser'>
-                <p>User</p>
+                <p>Usuario</p>
                 <div className="contInputIcon">
                     <AiOutlineUser className="icon"/>
                     <input className="inputText" type="text" {...register('email',{required:true})}/>
                 </div>
             </div>
             <div className='inputPassword'>
-                <p>Password</p>
+                <p>Contraseña</p>
                 <div className="contInputIcon">
                     <BiKey className="icon"/>
                     <input className="inputPasw" type="password" {...register('passwd',{required:true})} />

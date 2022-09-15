@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background: rgba(255, 255, 255, 0.7);
+    background-color: aliceblue;
     border-radius: 25px;
    transition-duration: 0.5s;
 }
@@ -25,13 +25,13 @@
     justify-content: center;
     align-items: center;
 }
-.contIa .contIaBody .contCenter .bandRigth{
+.contIa .contIaBody .contCenter .bandLeft{
     width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: space-around;
 }
 .contIa .contIaBody .contCenter .dashCenter{
     width: 70%;
@@ -49,29 +49,107 @@
     align-items: center;
     justify-content: space-around;
 }
-.contIa .contIaBody .bandBottom .contCard{
-    width: 200px;
-    height: 50%;
+.contIa .contIaBody .contCenter .bandLeft .contCard{
+    width: 80%;
+    height: 24%;
+    font-size: 80%;
+    padding-top: 10px;
     display: flex;
+    border-radius: 10px;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    background-color: rgb(171, 194, 236);
+    justify-content: space-around;
+    background-color: rgb(83, 158, 232);
+    color: rgb(0, 0, 0);
+    transition: all 0.3s;
+    
+    box-shadow: 1px 1px 15px 1px black;
 }
-.contIa .contIaBody .bandBottom .contCard .cardLeft{
+.contIa .contIaBody .contCenter .bandLeft .contCard:hover{
+    background-image: linear-gradient(120deg, #d4fc79 10%, #96e6a1 100%);
+    cursor: pointer;
+    width: 83%;
+    opacity: 0.6;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(253, 252, 252, 0.5);
+}
+.contIa .contIaBody .contCenter .bandLeft .contCard p{
+    font-size: 15px;
+}
+.contIa .contIaBody .contCenter .bandLeft .contCard b{
+    font-size: 15px;
+    color: rgb(76, 224, 42);
+}
+.contIa .contIaBody .bandBottom .contCard{
+    width: 80%;
+    height: 100%;
+    font-size: 80%;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #303030;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+    box-shadow: 1px 1px 5px 1px black;
+}
+.contIa .contIaBody .bandLeft .contCard .contLeftCard{
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
-.contIa .contIaBody .bandBottom .contCard .cardRight{
+.contIa .contIaBody .bandLeft .contCard .contRightCard{
     width: 50%;
     height: 100%;
+}
+.contIa .contIaBody .iconBand{
+    width: 50px;
+    height: 50px;
+}
+.contIa .contIaBody .bandLeft .btnBand{
+    width: 50%;
+    height: 10%;
+    background-color: rgb(0, 196, 204, 0.7);
+    border: none;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s;
+
+}
+.contIa .contIaBody .bandBottom .btnBand{
+    width: 20%;
+    height: 80%;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.contIa .contIaBody .bandBottom .contCard:hover{
+    background-image: linear-gradient(120deg, #d4fc79 10%, #96e6a1 100%);
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.6;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(253, 252, 252, 0.5);
+}
+.contIa .contIaBody .bandLeft .btnBand:hover{
+    background-image: linear-gradient(120deg, #d4fc79 10%, #96e6a1 100%);
+    cursor: pointer;
+    width: 60%;
+    opacity: 0.6;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(253, 252, 252, 0.5);
 }

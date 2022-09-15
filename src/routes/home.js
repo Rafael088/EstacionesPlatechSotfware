@@ -1,6 +1,6 @@
 import Estado from '../components/Estado.js';
 import Fallos from '../components/Fallos.js';
-import IA from '../components/Ia'
+import Analitica from '../components/Analitica'
 import Welcome from '../components/Welcome.js';
 
 import { 
@@ -27,8 +27,8 @@ const HomeRoutes = {
             icon      : <FcFlashOn size = {'3em'}/> 
         },
         {
-            name      : "/IA",
-            component : <IA/>,
+            name      : "/Analitica",
+            component : <Analitica/>,
             icon      : <FcTreeStructure size = {'3em'}/>
         }
     ]

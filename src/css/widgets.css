@@ -35,7 +35,7 @@
     width: 80%;
     color: white;
     transition: all 0.3s;
-    background-color: #43B4EB;
+    background-color: rgb(83, 158, 232);
     box-shadow: 1px 1px 15px 2px black;
     border-radius: 5px;
 }

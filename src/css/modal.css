@@ -19,7 +19,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(36, 36, 36);
+    background: linear-gradient(177.65deg, #5321CA -2.19%, rgba(27, 0, 92, 0.53) 110.15%);
 }
 .contModal .modalHeader .headerTitulo{
     width: 60%;
@@ -148,11 +148,11 @@
     justify-content: space-around;
     color: white;
     transition: all 0.3s;
-    background-color: #43B4EB;
+    background-color: rgb(83, 158, 232);
     box-shadow: 1px 1px 15px 2px black;
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
-    font-size: 90%;
+    font-size: 100%;
 
 }
 .contConfiaModal .confiaGraf{

@@ -5,14 +5,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 56px;
+    overflow: hidden;
 }
 .contPublic{
     width: 100%;
     height: 100%;
-    background-image: url('../pages/login/imgs/jason-blackeye-KUgDg__TMGk-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: radial-gradient(99.73% 98.31% at 51.96% 40.13%, rgba(96, 103, 242, 0.8) 0.01%, rgba(52, 52, 52, 0.8) 94.06%);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,21 +22,25 @@
     top: 96%;
     width: 14%;
     height: 20%;
-    background-color: rgba(92, 173, 213, 0.9);
+    background-color: rgba(56, 56, 56, 0.9);
     border-radius: 40px 40px 5px 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding-top: 5px;
     transition: all 0.3s;
     font-size: 15px;
     backdrop-filter: blur(5px);
 }
+.contPublic .contFlotante p{
+    border-bottom: 0.5px solid black;
+}
 .contPublic .contFlotante:hover{
     top: 81%;
     background-color: rgba(90, 216, 107, 0.7);
+    color: rgb(0, 0, 0);
     
     cursor: default;
 }
@@ -48,7 +50,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     border-radius: 15px;
     padding-right: 20px;
 }
@@ -66,9 +68,9 @@
 .contNavBar{
     width: 11%;
     height: 90%;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    backdrop-filter: blur(5px);
+    background: linear-gradient(177.65deg, #5321CA -2.19%, rgba(27, 0, 92, 0.53) 110.15%);
+    box-shadow: 0px 21px 21px 1px rgba(45, 29, 71, 0.53);
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,7 +106,7 @@
 .contFooterNav input[type='button']:hover{
     border: 1px solid red;
     background-color: transparent;
-    color: #000000;
+    color: #ffffff;
     width: 80%;
 }
 
@@ -117,19 +119,19 @@
     align-items: center;
     justify-content: center;
     transition-duration: 0.2s;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .contNavBar .contButtons .bttn{
     width: 100%;
     height: 17%;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 250, 54);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     transition-duration: 0.2s;
-    background-color: rgba(2, 115, 30, 0.6);
+    background-color: rgba(2, 115, 30, 1);
 }
 .contNavBar .contImg{
     width: 95%;
@@ -148,8 +150,7 @@
 }
 .contNavBar .contButtons .btt:hover{
     cursor: pointer;
-    
-    background-color: rgba(2, 115, 30, 0.6);
+    background-color: rgba(2, 115, 30, 1);
 }
 
 .contBody .contHead:hover{

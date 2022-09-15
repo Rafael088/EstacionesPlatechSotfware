@@ -1,4 +1,4 @@
-import React, {useEffect} from  "react";
+import React, {useEffect, useState} from  "react";
 import { SpinnerCircular }  from  'spinners-react'
 import { useSelector }    from  "react-redux";
 import { getHeader }      from  "../redux/header/Slice";
@@ -12,7 +12,7 @@ import HeadComps from "./HeadComps";
 
 function Estado() {
 
-    const [Antenas , setAntenas] = React.useState(null)
+    const [Antenas , setAntenas] = useState(null)
     const HEADER = useSelector(getHeader)
 
     useEffect(()=> {
@@ -42,8 +42,10 @@ function Estado() {
       
         return <>
             <div className="contEstado">
-                <h2>Estado de los sensores</h2>
-                <MapView antenas = {Antenas}/>
+                <HeadComps titulo="Estado de los Sensores"/>
+                <div className="contEstadoBody">
+                    <MapView antenas = {Antenas}/>
+                </div>
             </div>
         </>
     }
@@ -51,7 +53,9 @@ function Estado() {
     const waitComponent = () => {
         return <>
         <div className="contEstado">
-            <SpinnerCircular size = "20%"/>
+                <div className="contEstadoBody">
+                    <SpinnerCircular size = "20%"/>
+                </div>
         </div>   
         </>
     }
