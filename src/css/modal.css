@@ -19,12 +19,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(177.65deg, #5321CA -2.19%, rgba(27, 0, 92, 0.53) 110.15%);
+    background-color: #303030;
 }
 .contModal .modalHeader .headerTitulo{
     width: 60%;
     height: 100%;
-    color: aliceblue;
+    color: #f0f8ff;
     display: flex;
     flex-direction: column;
     align-items: center;

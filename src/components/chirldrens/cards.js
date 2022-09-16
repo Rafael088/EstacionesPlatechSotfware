@@ -1,8 +1,8 @@
 import React from "react";
 
-function Cards({titulo, text, datos, children}) {
+function Cards({titulo, text, datos, children, color}) {
     return ( 
-        <div className='contCard'>
+        <div className={color}>
             <div className="contLeftCard">
                 <h5>{titulo}</h5>
                 <b>{text}</b>
