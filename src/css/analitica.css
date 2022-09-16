@@ -25,6 +25,14 @@
     justify-content: center;
     align-items: center;
 }
+.contIa .contIaBody .contCenter .contGraficaEPE{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .contIa .contIaBody .contCenter .bandLeft{
     width: 30%;
     height: 100%;
@@ -59,11 +67,20 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(83, 158, 232);
+    background-color: #539ee8;
     color: rgb(0, 0, 0);
     transition: all 0.3s;
     
     box-shadow: 1px 1px 15px 1px black;
+}
+.contIa .contIaBody .contCenter .bandLeft .one{
+    background-color: rgba(149, 117, 205, 0.8);
+}
+.contIa .contIaBody .contCenter .bandLeft .two{
+    background-color: rgba(83, 158, 232, 0.8);
+}
+.contIa .contIaBody .contCenter .bandLeft .three{
+    background-color: rgba(2, 115, 30, 0.8);
 }
 .contIa .contIaBody .contCenter .bandLeft .contCard:hover{
     background-image: linear-gradient(120deg, #d4fc79 10%, #96e6a1 100%);
@@ -78,7 +95,7 @@
 }
 .contIa .contIaBody .contCenter .bandLeft .contCard b{
     font-size: 15px;
-    color: rgb(76, 224, 42);
+    color: #4ce02a;
 }
 .contIa .contIaBody .bandBottom .contCard{
     width: 80%;
@@ -107,6 +124,10 @@
 .contIa .contIaBody .bandLeft .contCard .contRightCard{
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .contIa .contIaBody .iconBand{
     width: 50px;
