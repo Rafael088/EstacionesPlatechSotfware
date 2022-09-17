@@ -14,7 +14,14 @@ function TablaFallos({datos}) {
                     <option value="Fecha">Fecha</option>
                     <option value="Ubicacion">Ubicacion</option>
                 </select></p>
-                
+                <div className='infoCard'>
+                    <BsFillPinFill className='iconT'/>
+                    <p>Etiquetar</p>
+                    <AiFillEdit className='iconE'/>
+                    <p>Editar</p>
+                    <AiFillDelete className='iconR'/>
+                    <p>Eliminar</p>
+                </div>
             </div>
             <table className='tablaFallos'>
                 <thead>

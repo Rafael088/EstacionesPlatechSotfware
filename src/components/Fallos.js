@@ -1,10 +1,9 @@
 import '../css/fallos.css';
 import HeadComps from './HeadComps';
 import TablaFallos from './TablaFallos';
-import React, { useState } from 'react';
 
 function Fallos() {
-    const [datosT, setDatosT] = useState([
+    const datosT = [
         {
             id:"1",
             name:"Rafael"
@@ -89,7 +88,7 @@ function Fallos() {
             id:"4",
             name:"Chec"
            }
-    ]);
+    ];
     return ( 
         <div className="contFallos">
             <HeadComps titulo="Registro de Fallos" />
