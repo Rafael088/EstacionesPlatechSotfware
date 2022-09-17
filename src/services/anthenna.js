@@ -31,8 +31,5 @@ const GanthennaLotLat = (HEADER, body) => {
   })
 }
 
-
-
-
 export default Ranthenna
 export const anthennaService = {GanthennaLotLat}

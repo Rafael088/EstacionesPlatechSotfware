@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -43,28 +43,26 @@ function GraficaEPE() {
           },
         },
       };
-    const data = useMemo(function () {
-        return {
+    const data = {
           datasets: [
             {
-                label: 'Dataset 1',
+                label: 'Efectividad',
                 data: scores,
                 backgroundColor: 'rgba(149, 117, 205, 0.7)',
               },
               {
-                label: 'Dataset 2',
+                label: 'Presicion',
                 data: scores2,
                 backgroundColor: 'rgba(83, 158, 232, 0.7)',
               },
               {
-                label: 'Dataset 3',
+                label: 'Exactitud',
                 data: scores3,
                 backgroundColor: 'rgba(2, 115, 30, 0.7)',
               },
           ],
           labels,
         };
-      }, []);
     return ( 
         <div className="contGraficaEPE">
             <Bar data={data} options={options}/>

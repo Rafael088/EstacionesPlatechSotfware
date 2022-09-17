@@ -16,10 +16,15 @@ function ModalTable(props) {
         <Modal.Body>
             <form className='formTabla'>
                 <p>Casua del Fallo</p>
-                <input type="text" name="causa"/>
+                <select name="causaFallo" id="causa-select">
+                    <option value="">Fuertes Vientos</option>
+                    <option value="FA">Tormenta</option>
+                    <option value="NOTFA">Tormenta Electrica</option>
+                    <option value="NOTFA">Luvia</option>
+                </select>
                 <p>Tipo de Fallo</p>
                 <select name="tipoFallo" id="tipo-select">
-                    <option value="">-----------</option>
+                    <option value="">...</option>
                     <option value="FA">Fallo Atmosferico</option>
                     <option value="NOTFA">Fallo No Atmosferico</option>
                 </select>
