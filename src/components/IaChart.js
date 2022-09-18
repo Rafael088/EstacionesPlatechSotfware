@@ -78,7 +78,7 @@ function IaChart() {
     return ( 
         <>
         <div className="contConfiaModal">
-        <Cards titulo="Grafica de Predicción" text="Cuando las lineas se separen se lanzara una alerta por posible fallo"/>
+        <Cards titulo="Grafica de Predicción" text="Cuando las lineas se separen se lanzara una alerta por posible fallo" color="contCard"/>
         <div className="confiaGraf">
         <ResponsiveContainer width="100%" height="100%">
             <AreaChart
@@ -118,7 +118,7 @@ function IaChart() {
             </AreaChart>
         </ResponsiveContainer>
         </div>
-        <Cards titulo="Historial de Predicciones" text="Mes anterior:" datos="No hubo Riesgos"/>
+        <Cards titulo="Historial de Predicciones" text="Mes anterior:" datos="No hubo Riesgos" color="contCard"/>
         </div>
         
         </>

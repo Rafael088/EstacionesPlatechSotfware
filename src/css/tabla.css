@@ -45,14 +45,14 @@
 }
 .contTablaFallos .tableHeaderTools .infoCard .iconT{
 
-    color: #33691E;
+    color: rgba(2, 115, 30, 0.7);
 }
 .contTablaFallos .tableHeaderTools .infoCard .iconE{
    
-    color: #512DA8;
+    color: rgba(149, 117, 205, 0.7);
 }
 .contTablaFallos .tableHeaderTools .infoCard .iconR{
-    color: rgb(181, 70, 70);
+    color: rgba(181, 70, 70, 0.7);
 }
 .contTablaFallos .tablaFallos{
     border-collapse: collapse;
@@ -84,19 +84,19 @@
 .contTablaFallos .tablaFallos .tdBtn .iconTd .iconT{
     width: 70%;
     height: 70%;
-    color: #33691E;
+    color: rgba(2, 115, 30, 0.7);
     cursor: pointer;
 }
 .contTablaFallos .tablaFallos .tdBtn .iconTd .iconE{
     width: 70%;
     height: 70%;
-    color: #512DA8;
+    color: rgba(149, 117, 205, 0.7);
     cursor: pointer;
 }
 .contTablaFallos .tablaFallos .tdBtn .iconTd .iconR{
     width: 70%;
     height: 70%;
-    color: rgb(181, 70, 70);
+    color: rgba(181, 70, 70, 0.7);
     cursor: pointer;
 }
 .contTablaFallos .tablaFallos .tdBtn .iconTd .iconT:hover{

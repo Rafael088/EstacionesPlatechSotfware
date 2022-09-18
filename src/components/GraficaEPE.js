@@ -65,6 +65,7 @@ function GraficaEPE() {
         };
     return ( 
         <div className="contGraficaEPE">
+          <p>%</p>
             <Bar data={data} options={options}/>
         </div>
      );
