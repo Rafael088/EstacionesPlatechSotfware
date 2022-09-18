@@ -57,7 +57,11 @@ function TiempoRest() {
         ],
       };
     return ( 
-            <Line options={options} data={data} />
+      <div className='tempRest'>
+        <p>Horas</p>
+        <Line options={options} data={data} />
+      </div>
+            
         
      );
 }

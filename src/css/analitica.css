@@ -29,7 +29,15 @@
     width: 90%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contIa .contIaBody .contCenter .tempRest{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -177,4 +185,9 @@
     opacity: 0.6;
     box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
     6px 6px 10px rgba(253, 252, 252, 0.5);
+}
+
+.dashCenter .contSectores{
+   width: 55%;
+   height: 100%;
 }
