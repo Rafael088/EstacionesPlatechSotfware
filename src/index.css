@@ -4,3 +4,37 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/*
+:root{
+  --primary-color:  #262626;
+  --secondary-color: #65768C;
+  --five-color:  #AECCF2;
+  --three-color: #A6A198;
+  --four-color: #C2E5F2;
+  --warning-color: rgba(255, 99, 132, 0.7);
+}*/
+
+/*:root{
+  --primary-color: #101C40;
+  --secondary-color: #1B2440;
+  --five-color: #4F5873;
+  --three-color: #9498A6;
+  --four-color: #416CA6;
+  --warning-color: rgba(255, 99, 132, 0.7);
+}*/
+/*:root{
+  --primary-color: #A2B6F2;
+  --secondary-color: #527AF2;
+  --five-color: #0540F2;
+  --three-color: #F0F2F2;
+  --four-color: #F0F2F2;
+  --warning-color: rgba(255, 99, 132, 0.7);
+}*/
+:root{
+  --primary-color:#F2F2F2;
+  --secondary-color: #272727;
+  --five-color: #41F28E;
+  --three-color: #010326;
+  --four-color: rgba(4, 15, 217, 0.6);
+  --warning-color: rgba(255, 99, 132, 0.7);
+}

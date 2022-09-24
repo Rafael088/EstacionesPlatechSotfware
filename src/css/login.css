@@ -8,9 +8,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(99.73% 98.31% at 51.96% 40.13%, rgba(96, 103, 242, 0.8) 0.01%, rgba(127, 126, 126, 0.8) 94.06%);
+    background-color: #C2E5F2;
     transition: all 0.2s;
-    
 }
 .login .form{
     align-items: center;
