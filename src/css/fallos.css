@@ -6,9 +6,9 @@
     align-items: center;
     justify-content: flex-start;
     overflow-y: auto;
-    background-color: aliceblue;
     border-radius: 25px;
     transition-duration: 0.5s;
+    background-color: var(--primary-color);
 }
 
 .contFallosBody{

@@ -48,17 +48,17 @@ function GraficaEPE() {
             {
                 label: 'Efectividad',
                 data: scores,
-                backgroundColor: 'rgba(149, 117, 205, 0.7)',
+                backgroundColor: 'rgba(65, 242, 142, 0.6)',
               },
               {
                 label: 'Presicion',
                 data: scores2,
-                backgroundColor: 'rgba(83, 158, 232, 0.7)',
+                backgroundColor: 'rgba(4, 15, 217, 0.6)',
               },
               {
                 label: 'Exactitud',
                 data: scores3,
-                backgroundColor: 'rgba(2, 115, 30, 0.7)',
+                backgroundColor: 'rgba(1, 3, 38, 0.6)',
               },
           ],
           labels,

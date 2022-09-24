@@ -6,8 +6,9 @@
     align-items: center;
     justify-content: flex-start;
     transition-duration: 0.5s;
-    background: aliceblue;
     border-radius: 25px;
+    
+    background-color: var(--primary-color);
    
 }
 .contEstado .contEstadoBody{

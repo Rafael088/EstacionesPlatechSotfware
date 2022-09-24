@@ -1,12 +1,12 @@
 .contCompsHead{
     width: 100%;
-    height: 10%;
+    height: 14%;
     margin-top: 20px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid rgb(19, 167, 51);
+    border-bottom: 2px solid #000;
 }
 .contCompsHead .bodyCompsHead{
     width: 70%;
@@ -70,7 +70,7 @@
 .contCompsHead .contPerfil .bodyPerfil .contIconImg .iconPerfil{
     width: 150%;
     height: 150%;
-    color: rgb(19, 167, 51);
+    color: #262626;
 }
 .contCompsHead .contPerfil .bodyPerfil .contIconImg .iconPerfil:hover{
     width: 180%;
@@ -83,17 +83,16 @@
     transition: all 0.2s;
 }
 .contCompsHead .contPerfil .bodyPerfil .contIconImg .contImgPerfil{
-    width: 60%;
-    height: 70%;
+    width: 65%;
+    height: 60%;
     background-image: url('../imgs/perfilImg.jpg');
-    background-size: 100%;
+    background-size: 110%;
     border-radius: 55px;
-    border: 1px solid rgb(19, 167, 51);
+    background-repeat: no-repeat;
+    border: 1px solid var(--primary-color);
 }
 .contCompsHead .contPerfil .bodyPerfil .contIconImg .contImgPerfil:hover{
     transition: all 0.2s;
-    width: 65%;
-    height: 75%;
     border: 1px solid rgb(19, 140, 167);
 }
 .contCompsHead  .headCompsDate{

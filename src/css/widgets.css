@@ -33,9 +33,9 @@
     align-items: center;
     justify-content: center;
     width: 80%;
-    color: white;
+    color: rgb(0, 0, 0);
     transition: all 0.3s;
-    background-color: rgb(83, 158, 232);
+    background-color: var(--secondary-color);
     box-shadow: 1px 1px 15px 2px black;
     border-radius: 5px;
 }

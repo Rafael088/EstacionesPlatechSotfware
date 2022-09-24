@@ -10,6 +10,7 @@ import CardBandLeft from './CardEPE';
 import CardInfo from './CardInfo';
 
 function Analitica() {
+    const datos = "Tiempo de restauración del servicio en el ultimo mes. comparando la causa del fallo, con el tiempo en horas en que se solucionó";
     const [position, setPosition] = useState(0);
     return ( 
         <div className="contIa">
@@ -21,8 +22,24 @@ function Analitica() {
                          <CardBandLeft/>
                         </>:
                         <>
-                            {position === 1 ? <><CardInfo titulo="Reacción" datos="Tiempo de restauración del servicio en el ultimo mes. comparando la causa del fallo, con el tiempo en horas en que se solucionó" color='contCardInfo'/><button className='btnBand' onClick={()=>setPosition(0)}>Volver <FcDownLeft className='iconBand'/> </button></>:
-                             <><CardInfo titulo="Grafica de sectores" datos="Muestra los sectores con mayor frecuencia de fallos en el ultimo mes" color='contCardInfo'/><button className='btnBand' onClick={()=>setPosition(0)}>Volver <FcDownLeft className='iconBand'/> </button></>  }
+                            {position === 1 ? <><CardInfo 
+                                                    titulo="Reacción" 
+                                                    datos={datos}
+                                                    color='contCardInfo'/>
+                                                        <button 
+                                                            className='btnBand' 
+                                                            onClick={()=>setPosition(0)}>
+                                                                Volver <FcDownLeft className='iconBand'/>
+                                                        </button></>:
+                                            <><CardInfo 
+                                                    titulo="Grafica de sectores" 
+                                                    datos="Muestra los sectores con mayor frecuencia de fallos en el ultimo mes" 
+                                                    color='contCardInfo'/>
+                                                        <button 
+                                                            className='btnBand' 
+                                                            onClick={()=>setPosition(0)}>
+                                                                Volver <FcDownLeft className='iconBand'/> 
+                                                        </button></>  }
                         </>
                         }
                     </div>
